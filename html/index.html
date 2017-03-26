@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <p id="display"></p>
+ 
+        Text: <input type="text" id="late"> 
+         <button onclick="showResult()">Submit</button>
+    
+   
+    <script>
+            function showResult(){
+                var cnt = 0;
+                var late = document.getElementById("late").value;
+                    if(late == "late"){
+                       document.getElementById("display").innerHTML = "Hello World";
+                    }
+                }
+    </script>
+</body>
+</html>
