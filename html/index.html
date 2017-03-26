@@ -5,20 +5,55 @@
     <title>Document</title>
 </head>
 <body>
-   <p id="display"></p>
+   
  
-        Text: <input type="text" id="late"> 
-         <button onclick="showResult()">Submit</button>
+       
     
    
     <script>
-            function showResult(){
-                var cnt = 0;
-                var late = document.getElementById("late").value;
-                    if(late == "late"){
-                       document.getElementById("display").innerHTML = "Hello World";
+//            function showStudInfo(){
+//                var cnt = "goodmorning";
+//                var late = document.getElementById("idNumber").value;
+//                    if(late == "2150958"){
+//                       document.getElementById("display").innerHTML ="Teodoro D. Delson";
+//                    }
+//                }
+          function show{
+                var cnt = "goodmorning";
+                var test = document.getElementById("idNumber").value;
+                    if(test.contains( "2150958")){
+                       document.getElementById("AddViolation").innerHTML ="Teodoro D. Delson";
                     }
                 }
+   
+
+        
     </script>
+    
+    
+     Text: <input type="text" id="idNumber"> 
+         <button onclick="showStudInfo()">Submit</button>
+<p id="display"></p>
+      
+      
+
+<!--
+<select id="listOfVio">
+ 
+  <option value="Late">Late</option>
+  <option value="saab">Absent</option>
+  <option value="mercedes">Improper HairCut</option>
+    <option value="audi">Shoes</option>     
+      
+</select>
+-->
+   
+
+      <input type="checkbox" id="messageCheckbox" value="Late">Late<br>
+      <input type="checkbox" id="messageCheckbox" value="Car">Absent 
+       
+    
+      <button onclick="showVio()">Submit</button>  
+    <p id="AddViolation: ">qweeqweqwe</p>
 </body>
 </html>
