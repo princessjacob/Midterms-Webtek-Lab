@@ -20,14 +20,21 @@ function getDetails(){
 
  function showRequests(x){
       var get = JSON.parse(x);
+     var testing = 0;
      for(var i = 0; i <get.students.length; i++){
          var temp = get.students[i];
          if(document.getElementById("idNumber").value == temp.idnumber){
-             document.getElementById("display").innerHTML= temp.name + " " + temp.section + " " + temp.age + " " + temp.parentsContact ;
-             
-             
-         }
+//             document.getElementById("display").innerHTML= temp.name + " " + temp.section + " " + temp.age + " " + temp.parentsContact ; //
+             if(document.getElementById("late").checked == true){
+                testing++;
+                 document.getElementById("display").innerHTML = testing;
+             }
+                     
+         
      }
      
  }
+ }
+
+
 
