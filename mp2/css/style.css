@@ -1,3 +1,112 @@
+/* General Font Style */
+
+h1 {
+    font-size: 2.5em;
+    font-family: 'Fredoka One', cursive;
+    margin-left: 70px;
+    margin-right: 70px;
+    display: block;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+#banner-image {
+    background: url(../images/maxresdefault.jpg);
+    background-size: 100% 100%;
+    height: 300px;
+}
+
+.logo {
+    float:left;
+    height: 250px;
+    vertical-align: middle;
+}
+
+.logo-strip {
+    padding-top: 100px;
+    width: 100%;
+    font-size: 4em;
+    color: white;
+    font-family: 'Lobster', cursive;
+    text-shadow: 3px 3px black;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    flex: 1;
+    height: auto;
+    margin-bottom: 50px;
+    background: #5DADE2;
+}
+
+.row {
+    background: white;
+    width: 60%;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    margin: 3px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    font-size: 100%;
+}
+
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+    font-family: 'Allerta', sans-serif;
+}
+
 /* Button */
 
 .button {
