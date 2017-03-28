@@ -11,21 +11,15 @@
     
    
     <script>
-//            function showStudInfo(){
-//                var cnt = "goodmorning";
-//                var late = document.getElementById("idNumber").value;
-//                    if(late == "2150958"){
-//                       document.getElementById("display").innerHTML ="Teodoro D. Delson";
-//                    }
-//                }
-          function show{
+            function showStudInfo(){
                 var cnt = "goodmorning";
-                var test = document.getElementById("idNumber").value;
-                    if(test.contains( "2150958")){
-                       document.getElementById("AddViolation").innerHTML ="Teodoro D. Delson";
+                var late = document.getElementById("idNumber").value;
+                
+                    if(late == "2150958"){
+                       document.getElementById("display").innerHTML ="Teodoro D. Delson";
                     }
                 }
-   
+
 
         
     </script>
@@ -49,11 +43,11 @@
 -->
    
 
-      <input type="checkbox" id="messageCheckbox" value="Late">Late<br>
-      <input type="checkbox" id="messageCheckbox" value="Car">Absent 
+      <input type="checkbox" class="foo" value="Late">Late<br>
+      <input type="checkbox" class="foo" value="Car">Absent 
        
     
-      <button onclick="showVio()">Submit</button>  
+      <button onclick="show()">Submit</button>  
     <p id="AddViolation: ">qweeqweqwe</p>
 </body>
 </html>

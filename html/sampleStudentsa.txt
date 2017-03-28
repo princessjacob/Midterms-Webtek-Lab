@@ -1,0 +1,22 @@
+2150958,Florida Searcy  ,15,Grade 9,(833) 630-3564,Grade 9 -A
+2150960,Jetta Williamson  ,15,Grade 9,(822) 710-2118,Grade 9 -A
+
+{
+	"Students": [
+	{
+	"idnumber" : "2150958",
+	"name" : "Florida Searcy",
+	"age" : "15",
+	"grade" : "Grade 9",
+	"parentsContact" : "074-444-5555",
+	"Section" : "Grade 9 Malandi"
+	},
+
+	{
+	"idnumber" : "2150960",
+	"name" : "Jetta Williamson",
+	"age" : "15",
+	"grade" : "Grade 9",
+	"parentsContact" : "074-187-100",
+	"Section" : "Grade 9 Malanjutay"
+	},

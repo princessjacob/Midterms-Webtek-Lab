@@ -1,0 +1,23 @@
+{
+	"students": [
+	{
+	"idnumber" : "2150958",
+	"name" : "Florida Searcy",
+	"age" : "15",
+	"grade" : "Grade 9",
+	"parentsContact" : "074-444-5555",
+	"section" : "Grade 9 Malandi"
+	},
+
+	{
+	"idnumber" : "2150960",
+	"name" : "Jetta Williamson",
+	"age" : "15",
+	"grade" : "Grade 9",
+	"parentsContact" : "074-187-100",
+	"section" : "Grade 9 Malanjutay"
+	}
+]
+
+
+}
