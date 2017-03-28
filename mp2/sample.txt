@@ -6,7 +6,14 @@
 	"age" : "15",
 	"grade" : "Grade 9",
 	"parentsContact" : "074-444-5555",
-	"section" : "Grade 9 Malandi"
+	"section" : "Grade 9 Malandi",
+	"vioLate" : 0,
+	"vioAbcsent" : 0,
+	"vioNoId" : 0,	
+	"vioImproperHairCut" : 0,
+	"vioCutClass" : 0,
+	"vioImproShoes" : 0,
+	"vioImproUniform" : 0,
 	},
 
 	{
@@ -15,7 +22,14 @@
 	"age" : "15",
 	"grade" : "Grade 9",
 	"parentsContact" : "074-187-100",
-	"section" : "Grade 9 Malanjutay"
+	"section" : "Grade 9 Malanjutay"	
+        "vioLate" : 0,
+	"vioAbcsent" : 0,
+	"vioNoId" : 0,	
+	"vioImproperHairCut" : 0,
+	"vioCutClass" : 0,
+	"vioImproShoes" : 0,
+	"vioImproUniform" : 0,
 	}
 ]
 
