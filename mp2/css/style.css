@@ -1,5 +1,8 @@
 /* General Font Style */
-
+html {
+   background: #5DADE2;
+    background-size: 100% 100%;  
+}
 h1 {
     font-size: 2.5em;
     font-family: 'Fredoka One', cursive;
@@ -12,25 +15,34 @@ h2 {
     font-size: 1.5em;
 }
 
-#banner-image {
-    background: url(../images/maxresdefault.jpg);
-    background-size: 100% 100%;
-    height: 300px;
+.row-header {
+    background: black;
+    width: 60%;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    margin: 3px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    font-size: 100%;
 }
 
 .logo {
     float:left;
-    height: 250px;
+    height: 140px;
     vertical-align: middle;
 }
 
 .logo-strip {
-    padding-top: 100px;
+    padding: 1em;
     width: 100%;
-    font-size: 4em;
+    font-size: 3em;
     color: white;
     font-family: 'Lobster', cursive;
-    text-shadow: 3px 3px black;
+    text-shadow: 3px 3px grey;
 }
 
 .container {
@@ -39,7 +51,7 @@ h2 {
     flex: 1;
     height: auto;
     margin-bottom: 50px;
-    background: #5DADE2;
+    margin-bottom: 50px;
 }
 
 .row {
@@ -179,51 +191,25 @@ h2 {
 
 /* Form */
 
-input[type=text]:focus {
-    border: 3px solid #555;
+input[type=text] {
+    width: 200px;
+    box-sizing: border-box;
+    border: /*2px solid #008CBA*/ none;
+    border-bottom: 2px solid black;
+    border-radius: 4px;
+    font-size: 1em;
+    /*background-color: white;
+    background-repeat: no-repeat; 
+    padding: 12px 20px 12px;  */
+    padding: 1em;
+
 }
 
-/* Radio Button */
-div {
-  margin: 0 0 0.75em 0;
+label {
+    font-size: 1.5em; 
 }
 
-input[type="radio"] {
-  display: none;
-}
-
-input[type="radio"] + label {
-  color: #292321;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-}
-
-input[type="radio"] + label span {
-  display: inline-block;
-  width: 19px;
-  height: 19px;
-  margin: -1px 4px 0 0;
-  vertical-align: middle;
-  cursor: pointer;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-}
-
-input[type="radio"] + label span {
-  background-color: #292321;
-}
-
-input[type="radio"]:checked + label span {
-  background-color: #CC3300;
-}
-
-input[type="radio"] + label span,
-input[type="radio"]:checked + label span {
-  -webkit-transition: background-color 0.4s linear;
-  -o-transition: background-color 0.4s linear;
-  -moz-transition: background-color 0.4s linear;
-  transition: background-color 0.4s linear;
-}
+/* Checkbox */
 /*****checkbox**/
 .collapse{
   cursor: pointer;
@@ -238,3 +224,6 @@ input[type="radio"]:checked + label span {
 .collapse + input:checked + div{
   display:block;
 }
+
+
+
