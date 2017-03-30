@@ -224,4 +224,17 @@ input[type="radio"]:checked + label span {
   -moz-transition: background-color 0.4s linear;
   transition: background-color 0.4s linear;
 }
-
+/*****checkbox**/
+.collapse{
+  cursor: pointer;
+  display: block;
+}
+.collapse + input{
+  display: none; /* hide the checkboxes */
+}
+.collapse + input + div{
+  display:none;
+}
+.collapse + input:checked + div{
+  display:block;
+}
