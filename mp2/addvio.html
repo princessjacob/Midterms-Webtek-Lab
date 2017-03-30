@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="A page that shows the options as to add the new form.">
         <meta name="author" content="Webtek MI">
-        <title>Newform</title>
+        <title>ADD VIOLATION</title>
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet">
@@ -17,12 +17,13 @@
     <body>
         
         <div class="container">
-            <div id="banner-image">
-                <div class="wrapper">
+            <div class="row-header">
+                <div class="col-12">
                     <img class="logo" src="images/slu.png">
                     <h1 class="logo-strip">Saint Louis University Laboratory High School</h1>
                 </div>
             </div>
+
             <div class="row">
                 <div class = "col-12">
                     <h1>ADD VIOLATION</h1>
@@ -30,22 +31,12 @@
                     <form>
                         <label type="studId">Student ID:
                         </label>
-                        <input type="text" id="studId" name="studId">
+                        <input type="text" id="studId" name="studId" placeholder="Enter Student ID">
                     </form>
                 </div>
-            </div> 
+            </div>
             <div class="row">
                 <div class="col-12">
-                    <h1></h1>
-                    <div>
-                      <input type="radio" id="radio01" name="radio" />
-                      <label for="radio01"><span></span>Excused</label>
-                    </div>
-
-                    <div>
-                     <input type="radio" id="radio02" name="radio" />
-                     <label for="radio02"><span></span>Unexcused</label>
-                    </div>
                     <div id = "checkbox">                  
                         <label class="collapse" for="_1">Violations</label>
                         <input id="_1" type="checkbox"> 
@@ -69,17 +60,14 @@
                             </form>
                         </div>                       
                     </div>
-                 </div>
-                
                 </div>
-                <div class="row">
+            </div>
+            <div class="row">
                     <div class="col-12">
-                        <button class="button" id="submit"><span>Submit </span></button>
-                    </div>
+                    <button class="button" id="submit"><span>Submit </span></button>
                 </div>
             </div>
         </div>
-        
         
     </body>
 </html>
