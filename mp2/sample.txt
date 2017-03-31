@@ -13,7 +13,7 @@
 	"vioImproperHairCut" : 0,
 	"vioCutClass" : 0,
 	"vioImproShoes" : 0,
-	"vioImproUniform" : 0,
+	"vioImproUniform" : 0
 	},
 
 	{
@@ -29,7 +29,7 @@
 	"vioImproperHairCut" : 0,
 	"vioCutClass" : 0,
 	"vioImproShoes" : 0,
-	"vioImproUniform" : 0,
+	"vioImproUniform" : 0
 	}
 ]
 

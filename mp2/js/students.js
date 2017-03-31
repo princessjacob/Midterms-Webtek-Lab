@@ -1,6 +1,6 @@
 function getDetails(){
     var req = new XMLHttpRequest();
-    var url = "http://localhost/html/sample.txt";
+    var url = "http://localhost/makil/sample.txt";
     req.open("GET", url);
     req.onreadystatechange = function() {
         var ul = document.getElementById("pendingreq");
@@ -23,7 +23,7 @@ function getDetails(){
      var testing = 0;
      for(var i = 0; i <get.students.length; i++){
          var temp = get.students[i];
-         if(document.getElementById("idNumber").value == temp.idnumber){
+         if(document.getElementById("idNumber").value === temp.idnumber){
 //             document.getElementById("display").innerHTML= temp.name + " " + temp.section + " " + temp.age + " " + temp.parentsContact ; //
              if(document.getElementById("late").checked == true){
                 testing++;
@@ -31,6 +31,8 @@ function getDetails(){
              }
                      
          
+     }else{
+        document.getElementById("display").innerHTML = "no user found";
      }
      
  }
