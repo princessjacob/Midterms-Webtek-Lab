@@ -2,73 +2,73 @@
 <html lang =en>
     
 <head>
-        <meta charset="utf-8">
+      <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="A page that shows the options as to add the new form.">
         <meta name="author" content="Webtek MI">
-        <title>Dashboard</title>
+        <title>DASHBOARD</title>
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     
 <body>
     
 <div class="container">
             <div class="row-banner">
-                <img src="images/header.PNG" alt="Banner" class="responsive-img">
+                    <img src="images/header.PNG" alt="Banner" class="responsive-img">
             </div>
-
-            <div class="dashboard" id="first">
                 
+    
             <div class = "row">
                 <div class="col-12">
                     <script language="JavaScript">
+                        var gm = "Good Morning!";
+                        var ga = "Good Afternoon!";
+                        var ge = "Good Evening!";
                         var myDate = new Date();
-
-
                         /* hour is before noon */
                         if ( myDate.getHours() < 12 ) 
                         {
-                            document.write("Good Morning!");
+                            document.write("<p>" + gm.fontcolor("#4C4F4F").fontsize(5).bold() + "</p>");
+                            
+                
                         }
                         else  /* Hour is from noon to 5pm (actually to 5:59 pm) */
                         if ( myDate.getHours() >= 12 && myDate.getHours() <= 17 )
                         {
-                            document.write("Good Afternoon!");
+                            document.write("<p>" + ga.fontcolor("#4C4F4F").fontsize(5).bold() + "</p>");
                         }
                         else  /* the hour is after 5pm, so it is between 6pm and midnight */
                         if ( myDate.getHours() > 17 && myDate.getHours() <= 24 )
                         {
-                            document.write("Good Evening!");
+                            document.write("<p>" + ge.fontcolor("#4C4F4F").fontsize(5).bold() + "</p>");
                         }
                         else  /* the hour is not between 0 and 24, so something is wrong */
                         {
                             document.write("I'm not sure what time it is!");
                         }
                     </script>    
-                
+
             </div>
             </div>
             <div class="row">
-                <button class="button"><span>Create Form </span></button>
+                <div class = "center">
+                <form action = "addvio.html">
+<button class="button"><span>Add Violation</span></button>
+</form>
 
-            <div class="dropdown">
-              <button class="button"><span>View Form </span></button>
-              <div class="dropdown-content">
-                <a href="#">Grade 7</a>
-                <a href="#">Grade 8</a>
-                <a href="#">Grade 9</a>
-                <a href="#">Grade 10</a>
-                <a href="#">Grade 11</a>
-              </div>
-            </div>    
+<form action = "viewvio.html">
+<button class="button"><span>View Violation </span></button>
+</form>
+
+                </div>
                 
             </div>
-        </div>
     </div>
 
 </body>
