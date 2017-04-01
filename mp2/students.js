@@ -61,25 +61,37 @@ function getDetails(){
              }
              if(document.getElementById("noId").checked == true){
                  document.getElementById("display4").innerHTML = "No Id:";
+                 var noID = "NoID";
              }
              
              if(document.getElementById("ImproperHairCut").checked == true){
                  document.getElementById("display5").innerHTML = "Improper HairCut:";
+                 var improperHair = "ImproperHairCut";
+                 
              }
                if(document.getElementById("CutClass").checked == true){
                  document.getElementById("display6").innerHTML = "Cut class :";
+                   var cutclass = "CutClass";
              }
               if(document.getElementById("ImproUniform").checked == true){
                  document.getElementById("display7").innerHTML = "Improper Uniform:";
+                var improperUniform = "Improper Uniform";
              }
              if(document.getElementById("gadget").checked == true){
                  document.getElementById("display2").innerHTML = "gadget";
+                 var gadget = "Gadget";
+             }
+        
+            if(document.getElementById("violence").checked == true){
+                 document.getElementById("display2").innerHTML = "Violence";
+                 var violence = "violence";
              }
           
       }
      
 
-    var logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "late":late, "absent":absent} ;
+    var logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "late":late, "absent":absent
+                 , "noID":noID, "ImproperHairCut":improperHair, "CutClass":cutclass, "improperUniform":improperUniform, "gadget":gadget, "violence":violence} ;
 
     log.push(logObj);
 
@@ -91,10 +103,11 @@ function getDetails(){
     temp = -1;
  }
 
-// function search() {
-//     var log = [];
-//     log = JSON.parse(localStorage.Processed);
 
+//function search() {
+//     var log23 = [];
+//     log23 = JSON.parse(localStorage.Processed);
+//
 //     for()
 // }
 
