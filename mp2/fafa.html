@@ -2,20 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="js/students.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet"  type="text/css" href="style.css">
+    <script src="students.js"></script>
+    <title>Add Violation</title>
 </head>
 <body>
    
-  
 
- Text: <input type="text" id="idNumber"> 
-      <input type="checkbox" id="late" value="Late">Late<br>
-      <input type="checkbox" id="absent" value="Car">Absent 
- <button onclick="getDetails()">Submit</button>
-
-    <p id="display"></p>
+      
    
+
+ <input type="text" id="idNumber" placeholder="Enter ID #.."> 
+  <input type="date" id ="date" placeholder="Date">
+  <ul>
+      <input type="checkbox" id="late" value="Late">Late
+      <input type="checkbox" id="absent" value="absent">absent
+      <input type="checkbox" id="noId" value="No id">No id 
+       <input type="checkbox" id="ImproperHairCut" value="ImproperHairCut">ImproperHairCut
+     </ul>
+     <ul>
+      <input type="checkbox" id="CutClass" value="CutClass">CutClass 
+       <input type="checkbox" id="ImproShoes" value="ImproShoes">ImproShoes 
+        <input type="checkbox" id="ImproUniform" value="ImproUniform">ImproUniform
+        <input type="checkbox" id="gadget" value="gadget">gadget
+        
+         <br>
+
+
+      <button onclick="getDetails()" class="button">Submit</button>
+  </ul> 
+
+
+<ul>
+    <li id="display1"></li>
+        <dd id="display2"></dd> 
+    <li id="display2"></li>
+    <li id="display3"></li>
+    <li id="display4"></li>
+    <li id="display5"></li>
+    <li id="display6"></li>
+    <li id="display7"></li>
+</ul>
+    
+
+<p id="demo"></p>
+    
+   
+    <p id="display"></p>
     
 </body>
 </html>
