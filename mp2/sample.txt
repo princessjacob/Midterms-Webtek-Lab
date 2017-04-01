@@ -24,6 +24,176 @@
 	"grade" : "Grade 9",
 	"parentsContact" : "074-187-100",
 	"section" : "Grade 9 Malanjutay"
-	}
+	},
 
+	{
+	"idnumber" : "2150962",
+	"name" : "Mannong Gabriel",
+	"age" : "15",
+	"grade" : "Grade 9",
+	"parentsContact" : "074-187-100",
+	"section" : "Grade 9 Malanjutay"
+	},
+
+	{
+	"idnumber" : "2150963",
+	"name" : "Manang Landok",
+	"age" : "15",
+	"grade" : "Grade 9",
+	"parentsContact" : "074-187-100",
+	"section" : "Grade 9 Malanjutay"
+	},
+
+	{
+	"idnumber" : "2150964",
+	"name" : "Mang Jose",
+	"age" : "15",
+	"grade" : "Grade 9",
+	"parentsContact" : "074-187-100",
+	"section" : "Grade 9 Malanjutay"
+	},
+
+	{
+	"idnumber" : "2150965",
+	"name" : "Monte Kalbo",
+	"age" : "15",
+	"grade" : "Grade 9",
+	"parentsContact" : "074-187-100",
+	"section" : "Grade 9 Malanjutay"
+	},
+
+	{
+	"idnumber" : "2150966",
+	"name" : "Ninang Nolie",
+	"age" : "15",
+	"grade" : "Grade 9",
+	"parentsContact" : "074-187-100",
+	"section" : "Grade 9 Malanjutay"
+	},
+
+	{
+	"idnumber" : "2150967",
+	"name" : "Aenie Barack",
+	"age" : "15",
+	"grade" : "Grade 9",
+	"parentsContact" : "074-187-100",
+	"section" : "Grade 9 Malanjutay"
+	},
+	
+	{
+	"idnumber" : "2150968",
+	"name" : "Pinsao Biteng",
+	"age" : "15",
+	"grade" : "Grade 9",
+	"parentsContact" : "074-187-100",
+	"section" : "Grade 9 Malanjutay"
+	},
+
+	{
+	"idnumber" : "2150969",
+	"name" : "Bakkeng Central",
+	"age" : "15",
+	"grade" : "Grade 9",
+	"parentsContact" : "074-187-100",
+	"section" : "Grade 9 Malanjutay"
+	},
+
+	{
+	"idnumber" : "2150970",
+	"name" : "Twoa Juan Pive",
+	"age" : "15",
+	"grade" : "Grade 9",
+	"parentsContact" : "074-187-100",
+	"section" : "Grade 9 Malanjutay"
+	},
+
+	{
+	"idnumber" : "2150971",
+	"name" : "Steve Jobs",
+	"age" : "15",
+	"grade" : "Grade 9",
+	"parentsContact" : "074-187-100",
+	"section" : "Grade 9 Malanjutay"
+	},
+	
+	{
+	"idnumber" : "2150972",
+	"name" : "Micro softer",
+	"age" : "15",
+	"grade" : "Grade 9",
+	"parentsContact" : "074-187-100",
+	"section" : "Grade 9 Malanjutay"
+	},
+
+	{
+	"idnumber" : "2150973",
+	"name" : "Linux Zealot",
+	"age" : "15",
+	"grade" : "Grade 9",
+	"parentsContact" : "074-187-100",
+	"section" : "Grade 9 Malanjutay"
+	},
+
+	{
+	"idnumber" : "2150974",
+	"name" : "Beng Beng",
+	"age" : "15",
+	"grade" : "Grade 9",
+	"parentsContact" : "074-187-100",
+	"section" : "Grade 9 Malanjutay"
+	},
+
+	{
+	"idnumber" : "2150975",
+	"name" : "User Asus",
+	"age" : "15",
+	"grade" : "Grade 9",
+	"parentsContact" : "074-187-100",
+	"section" : "Grade 9 Malanjutay"
+	},
+
+	{
+	"idnumber" : "2150976",
+	"name" : "Manang Landok",
+	"age" : "15",
+	"grade" : "Grade 9",
+	"parentsContact" : "074-187-100",
+	"section" : "Grade 9 Malanjutay"
+	},
+
+	{
+	"idnumber" : "2150977",
+	"name" : "Manang Landok",
+	"age" : "15",
+	"grade" : "Grade 9",
+	"parentsContact" : "074-187-100",
+	"section" : "Grade 9 Malanjutay"
+	},
+
+	{
+	"idnumber" : "2150978",
+	"name" : "Desktop Lab",
+	"age" : "15",
+	"grade" : "Grade 9",
+	"parentsContact" : "074-187-100",
+	"section" : "Grade 9 Malanjutay"
+	},
+
+	{
+	"idnumber" : "2150979",
+	"name" : "Benzon Maharlika",
+	"age" : "15",
+	"grade" : "Grade 9",
+	"parentsContact" : "074-187-100",
+	"section" : "Grade 9 Malanjutay"
+	},
+
+	{
+	"idnumber" : "2150980",
+	"name" : "Barcelona Spainaireds",
+	"age" : "15",
+	"grade" : "Grade 9",
+	"parentsContact" : "074-187-100",
+	"section" : "Grade 9 Malanjutay"
+	}
 ]
