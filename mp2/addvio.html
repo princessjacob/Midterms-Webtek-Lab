@@ -13,26 +13,28 @@
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <script src="students.js"></script>
     </head>
     
     <body>
         
-        <div class="container">
-            <div class="row-banner">
-                <img src="images/header.PNG" alt="Banner" class="responsive-img">
+         <div class="container">
+            <div class="row-header">
+                <div class="col-12">
+                    <img class="logo" src="images/slu.png">
+                    <h1 class="logo-strip">Saint Louis University Laboratory High School</h1>
+                </div>
             </div>
 
             <div class="row">
                 <div class = "col-12">
                     <h1>ADD VIOLATION</h1>
                     <hr>
+                      <input type="date" id ="date" placeholder="Date">
                     <form>
-                        <label type="studId">Student ID:
+                        <label type="studId1">Student ID:
                         </label>
-                        <input type="text" id="studId" name="studId" placeholder="Enter Student ID">
-                        <label type="date">Date:
-                        </label>
-                        <input type="text" id="date" name="date" placeholder="mm/dd/yyyy">
+                        <input id="studId" type="text"  name="studId" placeholder="Enter Student ID">
                     </form>
                 </div>
             </div>
@@ -49,14 +51,15 @@
                             <table>                              
                             <form action="">
                             <tr>
-                            <td><input type="checkbox" name="violation" value="incompleteuniform">Incomplete Uniform</td>
-                            <td><input type="checkbox" name="violation" value="noID">NO ID</td>
+                            <td><input id="ImproUniform" type="checkbox" name="violation" value="incompleteuniform">Incomplete Uniform</td>
+                            <td><input id="noId" type="checkbox" name="violation" value="noID">NO ID</td>
                             </tr>
                             <tr>
-                            <td><input type="checkbox" name="violation" value="haircut">Unconventional haircut</td>
+                            <td><input id="ImproperHairCut" type="checkbox" name="violation" value="haircut">Unconventional haircut</td>
+                            <td><input id="ImproShoes" type="checkbox" name="violation" value="shoes">Improper Shoes </td>
                             </tr>
-                          </form>
                             </table>
+                            </form>
                        </div>
                     </div>
                     <div id = "checkbox2">                
@@ -64,16 +67,15 @@
                         <input id="_2" type="checkbox"> 
                         <div>
                             <table>                              
-                            <form action="">
+                            
                             <tr>
-                            <td><input type="checkbox" name="violation" value="truancy">Truancy</td>
-                            <td><input type="checkbox" name="violation" value="tardiness">Tardiness</td>
+                            <td><input id="Truancy" type="checkbox" name="violation" value="truancy">Truancy</td>
+                            <td><input id="late" type="checkbox" name="violation" value="tardiness">Tardiness</td>
                             </tr>
-                                <tr>
-                            <td><input type="checkbox" name="violation" value="abscence">Absence due to illness/important event</td>
+                            <td><input id="absent" type="checkbox" name="violation" value="abscence">Absence due to illness/important event</td>
                             </tr>
-                       </form>
                             </table>
+                            
                        </div>
                     </div>
                     <div id = "checkbox3">                  
@@ -83,27 +85,25 @@
                             <table>                              
                             <form action="">
                             <tr>
-                            <td><input type="checkbox" name="violation" value="bullying">Bullying</td>
-                            <td><input type="checkbox" name="violation" value="abuse">Abuse</td>
+                            <td><input id="bullying" type="checkbox" name="violation" value="bullying">Bullying</td>
+                            <td><input id="verbalAbuse" type="checkbox" name="violation" value="abuse">Verbal Abuse</td>
                             </tr>
                             <tr>
-                            <td><input type="checkbox" name="violation" value="pda">Public Display of Affection</td>
-                            <td><input type="checkbox" name="violation" value="dishonesty">Dishonesty</td>                         
+                            <td><input id="PDA" type="checkbox" name="violation" value="pda">Public Display of Affection</td>
+                            <td><input id="Dishonesty" type="checkbox" name="violation" value="dishonesty">Dishonesty</td>                         
                             </tr>
                             <tr>
-                            <td><input type="checkbox" name="violation" value="cheating">Cheating</td>
-                            <td><input type="checkbox" name="violation" value="smoking">Smoking or possession of cigarettes</td>
+                            <td><input id="cheating" type="checkbox" name="violation" value="cheating">Cheating</td>
+                            <td><input id="smoking" type="checkbox" name="violation" value="smoking">Smoking or possession of cigarettes</td>
                             </tr>
-                                <tr>
-                            <td><input type="checkbox" name="violation" value="alcohol">Drinking alcohol</td>
-                            <td><input type="checkbox" name="violation" value="materials">Bringing of inappropriate materials</td>                         
+                            <td><input id="Intoxication" type="checkbox" name="violation" value="alcohol">Drinking alcohol</td>
+                            <td><input id="InappMaterial" type="checkbox" name="violation" value="materials">Bringing of inappropriate materials</td>                         
                             </tr>
                             <tr>
-                            <td><input type="checkbox" name="violation" value="disrespect">Disrespect to teachers, superiors or school officials</td>
-                            <td><input type="checkbox" name="violation" value="disobedience">Disobedience to teachers, superiors or school officials</td>
+                            <td><input id="Disrespect" type="checkbox" name="violation" value="disrespect">Disrespect to teachers, superiors or school officials</td>
                             </tr>
-                          </form>
                             </table>
+                            </form>
                        </div>
                     </div>
                     <div id = "checkbox">                  
@@ -113,23 +113,24 @@
                             <table>                              
                             <form action="">
                             <tr>
-                            <td><input type="checkbox" name="violation" value="vandalism">Vandalism</td>
-                            <td><input type="checkbox" name="violation" value="damage to SP">Damage to school property</td>
-                            <td><input type="checkbox" name="violation" value="stealing">Stealing</td>
+                            <td><input id="Vandalism" type="checkbox" name="violation" value="vandalism">Vandalism</td>
+                            <td><input id="DmgSchl" type="checkbox" name="violation" value="damage to SP">Damage to school property</td>
+                            <td><input id="Stealing" type="checkbox" name="violation" value="stealing">Stealing</td>
                             </tr>
                             <tr>
-                            <td><input type="checkbox" name="violation" value="tampering">Tampering</td>
-                            <td><input type="checkbox" name="violation" value="littering">Littering</td>
+                            <td><input id="Tampering" type="checkbox" name="violation" value="tampering">Tampering</td>
+                            <td><input id="Littering" type="checkbox" name="violation" value="littering">Littering</td>
                             </tr>
-                        </form>
                             </table>
+                            </form>
                        </div>
                     </div>
                 </div>
             </div>
+            
             <div class="row">
                     <div class="col-12">
-                    <button class="button1" id="submit"><span>Submit </span></button>
+                    <button onclick="getDetails()"class="button1" id="submit"><span>Submit </span></button>
                 </div>
             </div>
         </div>
