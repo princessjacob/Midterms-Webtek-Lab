@@ -6,10 +6,7 @@ html {
 h1 {
     font-size: 2.5em;
     font-family: 'Fredoka One', cursive;
-    margin-left: 70px;
-    margin-right: 70px;
-    display: block;
-   text-align: center;
+    text-align: center;
 }
 
 h2 {
@@ -43,7 +40,7 @@ h2 {
 
 .row {
     background: white;
-    width: 60%;
+    width: 50%;
     display: flex;
     padding: 1em;
     margin: 3px 0px;
@@ -57,6 +54,11 @@ h2 {
     font-family: 'Allerta', sans-serif;
 }
 
+.foDesign {
+    display: block;
+    padding-top: 1em;
+}
+
 /* Button */
 
 .button {
@@ -66,7 +68,7 @@ h2 {
   color: #FFFFFF;
   text-align: center;
   font-size: 24px;
-  padding: 20px;
+  padding: 1em;
   width: 300px;
   transition: all 0.5s;
   cursor: pointer;
@@ -151,6 +153,17 @@ input[type=text] {
     padding: 12px 20px 12px;
 }
 
+input[type=date] {
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid #008CBA;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px;
+}
+
 label {
     font-size: 1.5em; 
 }
@@ -164,7 +177,7 @@ label {
   display: none;
 }
 .collapse + form{
-  display: inline-block;
+  display: block;
 }
 .collapse + input + div{
   display:none;
@@ -181,17 +194,26 @@ label {
 #checkbox3{
   margin-top: 2%;
 }
-.qwe{
-  text-align: center;
-}
 
 /* Media Queries */
 
 /* For mobile phones: */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 320px) {
     body {
-        padding: 1em;
+        padding-left: 0.25em;
+        padding-right: 1.45em;
         overflow-x: hidden;
+    }
+    h1 {
+        text-align: left;
+        font-size: 1.5em;
+    }
+    label {
+        font-size: 1em;
+    }
+    td {
+        font-size: 15px;
+        padding-bottom: 0.5em;
     }
     .row {
         width: 95%;
@@ -203,7 +225,13 @@ label {
     }
     .row-banner img {
         height: 100px;
-    }  
+    }
+    .button {
+        width: 250px;
+    }
+    .center {
+        width: 100%;
+    }
 }
 
 /* For Tablets */
@@ -211,6 +239,13 @@ label {
     body {
         padding: 1em;
         overflow-x: hidden;
+    }
+    label {
+        font-size: 1em;
+    }
+    td {
+        font-size: 15px;
+        padding-bottom: 0.5em;
     }
     .row {
         width: 90%;
