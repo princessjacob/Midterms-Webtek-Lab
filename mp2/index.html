@@ -34,42 +34,36 @@
                         /* hour is before noon */
                         if ( myDate.getHours() < 12 ) 
                         {
-                            document.write("<p>" + gm.fontcolor("#4C4F4F").fontsize(5).bold() + "</p>");
-                            
-                
+                            document.write("<p>" + gm.fontcolor("#4C4F4F").fontsize(12).bold() + "</p>");
                         }
                         else  /* Hour is from noon to 5pm (actually to 5:59 pm) */
                         if ( myDate.getHours() >= 12 && myDate.getHours() <= 17 )
                         {
-                            document.write("<p>" + ga.fontcolor("#4C4F4F").fontsize(5).bold() + "</p>");
+                            document.write("<p>" + ga.fontcolor("#4C4F4F").fontsize(12).bold() + "</p>");
                         }
                         else  /* the hour is after 5pm, so it is between 6pm and midnight */
                         if ( myDate.getHours() > 17 && myDate.getHours() <= 24 )
                         {
-                            document.write("<p>" + ge.fontcolor("#4C4F4F").fontsize(5).bold() + "</p>");
+                            document.write("<p>" + ge.fontcolor("#4C4F4F").fontsize(12).bold() + "</p>");
                         }
                         else  /* the hour is not between 0 and 24, so something is wrong */
                         {
                             document.write("I'm not sure what time it is!");
                         }
                     </script>    
-
-            </div>
+                </div>
             </div>
             <div class="row">
                 <div class = "center">
-                <form action = "addvio.html">
-<button class="button"><span>Add Violation</span></button>
-</form>
+                    <form action = "addvio.html">
+                        <button class="button"><span>Add Violation</span></button>
+                    </form>
 
-<form action = "viewvio.html">
-<button class="button"><span>View Violation </span></button>
-</form>
-
+                    <form action = "viewvio.html">
+                        <button class="button"><span>View Violation </span></button>
+                    </form>
                 </div>
-                
             </div>
-    </div>
-
-</body>
+        </div>
+    </body>
 </html>
