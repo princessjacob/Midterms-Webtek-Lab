@@ -20,6 +20,18 @@ function search() {
                 cell4.innerHTML = logger[i].late;
             } else if (logger[i].absent) {
                 cell4.innerHTML = logger[i].absent;
+            } else if (logger[i].noID) {
+                cell4.innerHTML = logger[i].noID;
+            } else if (logger[i].imporperHairCut) {
+                cell4.innerHTML = logger[i].imporperHairCut;
+            } else if (logger[i].CutClass){
+                cell4.innerHTML = logger[i].CutClass;
+            } else if (logger[i].improperUniform) {
+                cell4.innerHTML = logger[i].improperUniform;
+            } else if (logger[i].gadget) {
+                cell4.innerHTML = logger[i].gadget;
+            } else if (logger[i].violence) {
+                cell4.innerHTML = logger[i].violence;
             }
         }
     }  
