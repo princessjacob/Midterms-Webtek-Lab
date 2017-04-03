@@ -1,6 +1,6 @@
 function getDetails(){ 
         var req = new XMLHttpRequest();
-        var url = "http://localhost/webtek/mp2/sample.txt";
+        var url = "http://localhost/Midterms-Webtek-Lab/Mp2/sample.txt";
         req.open("GET", url);
         req.onreadystatechange = function() {
             var ul = document.getElementById("pendingreq");
@@ -51,7 +51,7 @@ function getDetails(){
 
              if(document.getElementById("late").checked == true){
                 var late= "late";
-                alert(container + "is late");
+                alert(container + "late");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "late":late} ;
                 log.push(logObj);
 
@@ -62,6 +62,7 @@ function getDetails(){
              if(document.getElementById("absent").checked == true){
                 document.getElementById("display3").innerHTML = (container + "is recorded as absent");
                 var absent = "absent";
+                alert(container + "absent");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "absent":absent} ;
                 log.push(logObj);
 
@@ -69,31 +70,72 @@ function getDetails(){
                 document.getElementById("absent").checked = "";   
              }
              if(document.getElementById("noId").checked == true){
-                 document.getElementById("display4").innerHTML = "No Id:";
-                 var noID = "NoID";
+                var noId= "noID";
+                alert(container + "has no ID");
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "noId":noID} ;
+                log.push(logObj);
+
+                localStorage.Processed = JSON.stringify(log);
+
+                document.getElementById("noId").checked = "";   
              }
              
              if(document.getElementById("ImproperHairCut").checked == true){
                  document.getElementById("display5").innerHTML = "Improper HairCut:";
                  var improperHair = "ImproperHairCut";
+                alert(container + "Improper Haircut");
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "improperHair":ImproperHairCut} ;
+                log.push(logObj);
+
+                localStorage.Processed = JSON.stringify(log);
+
+                document.getElementById("ImproperHairCut").checked = "";   
                  
              }
-               if(document.getElementById("CutClass").checked == true){
-                 document.getElementById("display6").innerHTML = "Cut class :";
-                   var cutclass = "CutClass";
+            if(document.getElementById("CutClass").checked == true){
+                document.getElementById("display6").innerHTML = "Cut class :";
+                var cutclass = "CutClass";
+                alert(container + "Cut Class");
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "cutClass":CutClass} ;
+                log.push(logObj);
+
+                localStorage.Processed = JSON.stringify(log);
+
+                document.getElementById("CutClass").checked = "";   
              }
               if(document.getElementById("ImproUniform").checked == true){
                  document.getElementById("display7").innerHTML = "Improper Uniform:";
-                var improperUniform = "Improper Uniform";
+                var improperUniform = "improperUniform";
+                  alert(container + "Improper Uniform");
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "improperUniform":improperUniform} ;
+                log.push(logObj);
+
+                localStorage.Processed = JSON.stringify(log);
+
+                document.getElementById("ImproUniform").checked = "";
              }
              if(document.getElementById("gadget").checked == true){
                  document.getElementById("display2").innerHTML = "gadget";
                  var gadget = "Gadget";
+                alert(container + "Gadget");
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "gadget":Gadget} ;
+                log.push(logObj);
+
+                localStorage.Processed = JSON.stringify(log);
+
+                document.getElementById("gadget").checked = "";
              }
         
             if(document.getElementById("violence").checked == true){
-                 document.getElementById("display2").innerHTML = "Violence";
-                 var violence = "violence";
+                document.getElementById("display2").innerHTML = "Violence";
+                var violence = "violence";
+                alert(container + "violence");
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "violence":violence} ;
+                log.push(logObj);
+
+                localStorage.Processed = JSON.stringify(log);
+
+                document.getElementById("violence").checked = "";
              }
           
       }
