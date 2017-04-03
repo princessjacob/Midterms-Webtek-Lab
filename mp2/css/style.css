@@ -62,6 +62,11 @@ h2 {
     font-family: 'Allerta', sans-serif;
 }
 
+.col-12, a{
+  font-family: 'Allerta', sans-serif;
+  font-size: 20px;
+}
+
 .foDesign {
     display: block;
     padding-top: 1em;
