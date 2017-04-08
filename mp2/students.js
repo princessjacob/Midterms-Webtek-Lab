@@ -1,6 +1,6 @@
 function getDetails(){ 
         var req = new XMLHttpRequest();
-        var url = "http://localhost/Midterms-Webtek-Lab/Mp2/sample.txt";
+        var url = "http://localhost/mp2/sample.txt"
         req.open("GET", url);
         req.onreadystatechange = function() {
             var ul = document.getElementById("pendingreq");
@@ -9,9 +9,6 @@ function getDetails(){
                     var par = JSON.parse(this.responseText);
                    // saveToLocalStorage(par);
                     showRequests(this.responseText);
-                }
-                else {
-                    ul.innerHTML = "no data found";
                 }
             }    
         };
@@ -34,15 +31,13 @@ function getDetails(){
         var container;      
                 //   var testing = temp.vioLate;
             if(document.getElementById("idNumber").value == get[i].idnumber){
-                document.getElementById("display1").innerHTML = get[i].idnumber +" "+ get[i].name;
+            //    document.getElementById("display1").innerHTML = get[i].idnumber +" "+ get[i].name;
                 container =get[i].idnumber +" "+ get[i].name;
                 name = get[i].name;
                 temp = i;  
                 break;  
             } else {
-                document.getElementById("display").innerHTML = "no user found";
-                document.getElementById("display1").innerHTML = "";
-                document.getElementById("display2").innerHTML = "";
+              alert("No user found!")
             }
      
     }
@@ -60,8 +55,6 @@ function getDetails(){
                 document.getElementById("late").checked = "";      
              }
              if(document.getElementById("absent").checked == true){
-                document.getElementById("display3").innerHTML = (container + "is recorded as absent");
-                var absent = "absent";
                 alert(container + "absent");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "absent":absent} ;
                 log.push(logObj);
@@ -72,7 +65,7 @@ function getDetails(){
              if(document.getElementById("noId").checked == true){
                 var noId= "noID";
                 alert(container + "has no ID");
-                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "noId":noID} ;
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "noId":noId} ;
                 log.push(logObj);
 
                 localStorage.Processed = JSON.stringify(log);
@@ -81,7 +74,6 @@ function getDetails(){
              }
              
              if(document.getElementById("ImproperHairCut").checked == true){
-                 document.getElementById("display5").innerHTML = "Improper HairCut:";
                  var improperHair = "ImproperHairCut";
                 alert(container + "Improper Haircut");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "improperHair":ImproperHairCut} ;
@@ -92,21 +84,19 @@ function getDetails(){
                 document.getElementById("ImproperHairCut").checked = "";   
                  
              }
-            if(document.getElementById("CutClass").checked == true){
-                document.getElementById("display6").innerHTML = "Cut class :";
-                var cutclass = "CutClass";
+            if(document.getElementById("Truancy").checked == true){
+                var Truancy = "Truancy";
                 alert(container + "Cut Class");
-                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "cutClass":CutClass} ;
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Truancy":Truancy} ;
                 log.push(logObj);
 
                 localStorage.Processed = JSON.stringify(log);
 
-                document.getElementById("CutClass").checked = "";   
+                document.getElementById("Truancy").checked = "";   
              }
               if(document.getElementById("ImproUniform").checked == true){
-                 document.getElementById("display7").innerHTML = "Improper Uniform:";
                 var improperUniform = "improperUniform";
-                  alert(container + "Improper Uniform");
+                 alert(container + "Improper Uniform");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "improperUniform":improperUniform} ;
                 log.push(logObj);
 
@@ -114,28 +104,157 @@ function getDetails(){
 
                 document.getElementById("ImproUniform").checked = "";
              }
+                if(document.getElementById("bullying").checked == true){
+                 var bullying = "Bullying";
+                alert("Recorded");
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Bullying":bullying} ;
+                log.push(logObj);
+
+                localStorage.Processed = JSON.stringify(log);
+
+                document.getElementById("bullying").checked = "";
+             }
+                if(document.getElementById("verbalAbuse").checked == true){
+                 var vAbuse = "Verbal Abuse";
+                alert("Violation Recorded");
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "verbalAbuse":vAbuse} ;
+                log.push(logObj);
+
+                localStorage.Processed = JSON.stringify(log);
+
+                document.getElementById("verbalAbuse").checked = "";
+             }
+                if(document.getElementById("PDA").checked == true){
+                 var PDA = "Public Display of Affection";
+                alert("Violation Recorded");
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Public Display of Affection":PDA} ;
+                log.push(logObj);
+
+                localStorage.Processed = JSON.stringify(log);
+
+                document.getElementById("PDA").checked = "";
+             }
+               if(document.getElementById("Dishonesty").checked == true){
+                 var dishonesty = "Dishonesty";
+                alert("Violation Recorded");
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Dishonesty":dishonesty} ;
+                log.push(logObj);
+
+                localStorage.Processed = JSON.stringify(log);
+
+                document.getElementById("Dishonesty").checked = "";
+             }
+                 if(document.getElementById("cheating").checked == true){
+                 var cheating = "Cheating";
+                alert("Violation Recorded");
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Cheating":cheating} ;
+                log.push(logObj);
+
+                localStorage.Processed = JSON.stringify(log);
+
+                document.getElementById("cheating").checked = "";
+             }
+                 if(document.getElementById("smoking").checked == true){
+                 var smoke = "Smoking";
+                alert("Violation Recorded");
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Smoking":smoke} ;
+                log.push(logObj);
+
+                localStorage.Processed = JSON.stringify(log);
+
+                document.getElementById("smoking").checked = "";
+             }
+                if(document.getElementById("Intoxication").checked == true){
+                var intox = "Intoxication";
+                alert("Violation Recorded");
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Intoxication":intox} ;
+                log.push(logObj);
+
+                localStorage.Processed = JSON.stringify(log);
+
+                document.getElementById("Intoxication").checked = "";
+             }
+                if(document.getElementById("InappMaterial").checked == true){
+                 var inaapMat = "Inappropriate Material";
+                alert("Violation Recorded");
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Innapropriate Material":inaapMat} ;
+                log.push(logObj);
+
+                localStorage.Processed = JSON.stringify(log);
+
+                document.getElementById("InnapMaterial").checked = "";
+             }
+                if(document.getElementById("Disrespect").checked == true){
+                 var disRP = "Disrespect";
+                alert("Violation Recorded");
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Disrespect":disRP} ;
+                log.push(logObj);
+
+                localStorage.Processed = JSON.stringify(log);
+
+                document.getElementById("cheating").checked = "";
+             }
+
              if(document.getElementById("gadget").checked == true){
-                 document.getElementById("display2").innerHTML = "gadget";
                  var gadget = "Gadget";
                 alert(container + "Gadget");
-                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "gadget":Gadget} ;
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "gadget":gadget} ;
                 log.push(logObj);
 
                 localStorage.Processed = JSON.stringify(log);
 
                 document.getElementById("gadget").checked = "";
              }
-        
-            if(document.getElementById("violence").checked == true){
-                document.getElementById("display2").innerHTML = "Violence";
-                var violence = "violence";
-                alert(container + "violence");
-                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "violence":violence} ;
+
+             if(document.getElementById("Vandalism").checked == true){
+                 var vandal = "Vandalism";
+                alert(container + vandal);
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Valdalism":vandal} ;
                 log.push(logObj);
 
                 localStorage.Processed = JSON.stringify(log);
 
-                document.getElementById("violence").checked = "";
+                document.getElementById("Vandalism").checked = "";
+             }
+             if(document.getElementById("DmgSchl").checked == true){
+                 var damage = "Damage to School Property";
+                alert(container + vandal);
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Damage to School Property":damage} ;
+                log.push(logObj);
+
+                localStorage.Processed = JSON.stringify(log);
+
+                document.getElementById("DmgSchl").checked = "";
+             }
+                if(document.getElementById("Stealing").checked == true){
+                 var steal = "Stealing";
+                alert(container + steal);
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Damage to School Property":damage} ;
+                log.push(logObj);
+
+                localStorage.Processed = JSON.stringify(log);
+
+                document.getElementById("Stealing").checked = "";
+             }
+                if(document.getElementById("Tampering").checked == true){
+                 var tamper = "Tampering";
+                alert(container + tamper);
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Tampering":tamper} ;
+                log.push(logObj);
+
+                localStorage.Processed = JSON.stringify(log);
+
+                document.getElementById("tamper").checked = "";
+             }
+                if(document.getElementById("Littering").checked == true){
+                 var litter = "Littering";
+                alert(container + litter);
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Littering":litter} ;
+                log.push(logObj);
+
+                localStorage.Processed = JSON.stringify(log);
+
+                document.getElementById("Littering").checked = "";
              }
           
       }
