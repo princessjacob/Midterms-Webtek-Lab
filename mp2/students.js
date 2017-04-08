@@ -244,7 +244,7 @@ function getDetails(){
 
                 localStorage.Processed = JSON.stringify(log);
 
-                document.getElementById("tamper").checked = "";
+                document.getElementById("Tampering").checked = "";
              }
                 if(document.getElementById("Littering").checked == true){
                  var litter = "Littering";
