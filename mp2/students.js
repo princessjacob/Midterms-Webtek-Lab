@@ -315,3 +315,136 @@ function generateTable() {
 
 
 
+function searchCount() {
+    var logger = [];
+
+    logger = JSON.parse(localStorage.Processed);
+
+    var lateCtr = 0;
+    var absentCtr = 0;
+    var noIdCtr = 0;
+    var improperHairCtr = 0;
+    var improperShoesCtr  = 0;
+    var truancyCtr = 0;
+    var improperUniformCtr = 0;
+    var bullyingCtr = 0;
+    var verbalAbuseCtr = 0;
+    var publicDACtr = 0;
+    var dishonestyCtr = 0;
+    var cheatingCtr = 0;
+    var smokingCtr = 0;
+    var intoxicationCtr = 0;
+    var innapropriateCtr= 0;
+    var disrespectCtr = 0;
+    var gadgetCtr = 0;
+    var vandalismCtr = 0;
+    var damageCtr = 0;
+    var stealingCtr = 0;
+    var tamperingCtr = 0;
+    var litteringCtr = 0;
+
+
+
+    for (var i = 0; i < logger.length; i++){
+        if (document.getElementById("idNumber").value == logger[i].idnum){
+            if(logger[i].late){
+                lateCtr++;        
+            } else if (logger[i].absent){
+                absentCtr++;
+            } else if (logger[i].noId){
+                noIdCtr++;
+            } else if (logger[i].improperHair){
+                improperHairCtr++;
+            } else if (logger[i].improperShoes) {
+                improperShoesCtr++;
+            } else if (logger[i].Truancy) {
+                truancyCtr++;
+            } else if (logger[i].improperUniform) {
+                improperUniformCtr++;
+            } else if (logger[i].Bullying) {
+                bullyingCtr++;
+            } else if (logger[i].verbalAbuse) {
+                verbalAbuseCtr();
+            } else if (logger[i].PublicDA) {
+                publicDACtr++;
+            } else if (logger[i].Dishonesty) {
+                dishonestyCtr++;
+            } else if (logger[i].Cheating) {
+                cheatingCtr++;
+            } else if (logger[i].Smoking) {
+                smokingCtr++;
+            } else if (logger[i].Intoxication) {
+                intoxicationCtr++;
+            } else if (logger[i].Innapropriate) {
+                innapropriateCtr++;
+            } else if (logger[i].Disrespect) {
+                disrespectCtr++;
+            } else if (logger[i].gadget) {
+                gadgetCtr++;
+            } else if (logger[i].Vandalism) {
+                vandalismCtr++;
+            } else if (logger[i].Damage) {
+                damageCtr++;
+            } else if (logger[i].Stealing) {
+                stealingCtr++;
+            } else if (logger[i].Tampering) {
+                tamperingCtr++;
+            } else if (logger[i].Littering) {
+                litteringCtr++;
+            }
+
+        }
+
+        if (lateCtr > 4){
+                        alert("The student has " + lateCtr + " late records.")
+        } else if (absentCtr > 4){
+                        alert("The student has " + absentCtr + " absent records.")
+        } else if ( noIdCtr > 4){
+                        alert("The student has " + noIdCtr + " no ID records.")
+        } else if (improperHairCtr > 4){
+                        alert("The student has " + improperHairCtr + " improper haircut records.")
+        } else if (improperShoesCtr > 4){
+                        alert("The student has " + improperShoesCtr + " improper shoes records.")
+        } else if (truancyCtr > 4){
+                        alert("The student has " + truancyCtr + " truancy records.")
+        } else if (improperUniformCtr > 4){
+                        alert("The student has " + improperUniformCtr + " improper uniform records.")
+        } else if (bullyingCtr > 4){
+                        alert("The student has " + bullyingCtr + " bullying records.")
+        } else if (verbalAbuseCtr > 4){
+                        alert("The student has " + verbalAbuseCtr + " verbal abuse records.")
+        } else if (publicDACtr > 4){
+                        alert("The student has " + publicDACtr + " PDA records.")
+        } else if (dishonestyCtr > 4){
+                        alert("The student has " + dishonestyCtr + " dishonesty records.")
+        } else if (cheatingCtr > 4){
+                        alert("The student has " + cheatingCtr + " cheating records.")
+        } else if (smokingCtr > 4){
+                        alert("The student has " + smokingCtr + " smoking records.")
+        } else if (intoxicationCtr > 4){
+                        alert("The student has " + intoxicationCtr + " intoxication records.")
+        } else if (innapropriateCtr > 4){
+                        alert("The student has " + innapropriateCtr + " bringing innapropriate material records.")
+        } else if (disrespectCtr > 4){
+                        alert("The student has " + disrespectCtr + " desirespecting records.")
+        } else if (gadgetCtr > 4){
+                        alert("The student has " + gadgetCtr + " bringing of gadget records.")
+        } else if (vandalismCtr > 4){
+                        alert("The student has " + vandalismCtr + " vandalism records.")
+        } else if (damageCtr > 4){
+                        alert("The student has " + damageCtr + " damages to school prperty records.")
+        } else if (stealingCtr > 4){
+                        alert("The student has " + stealingCtr + " stealing records.")
+        } else if (tamperingCtr > 4){
+                        alert("The student has " + tamperingCtr + " tampering records.")
+        } else if (litteringCtr > 4){
+                        alert("The student has " + litteringCtr + " littering records.")
+        }
+
+
+
+    }
+
+
+}
+
