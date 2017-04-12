@@ -1,3 +1,10 @@
+var temp = -1;
+var name = "";
+var log;
+var logObj;
+var container;
+var get;
+
 function getDetails(){ 
         var req = new XMLHttpRequest();
         var url = "http://localhost/mp2/sample.txt"
@@ -17,19 +24,14 @@ function getDetails(){
 }
 
  function showRequests(x){
-    var updated;
-    var get = JSON.parse(x);
-    var temp = -1;
-    var log = [];
+    get = JSON.parse(x);
+    log = [];
         if(localStorage.Processed) {
             log = JSON.parse(localStorage.Processed);
         }
-    var name = "";
-    var logObj;
     var userFound = false;
      
-    for(var i = 0; i <get.length; i++){
-        var container;      
+    for(var i = 0; i <get.length; i++){    
                 //   var testing = temp.vioLate;
             if(document.getElementById("idNumber").value == get[i].idnumber){
             //    document.getElementById("display1").innerHTML = get[i].idnumber +" "+ get[i].name;
@@ -37,16 +39,21 @@ function getDetails(){
                 name = get[i].name;
                 temp = i;  
                 userFound=true;
+				document.getElementById("studName").innerHTML = name;
+                document.getElementById("section").innerHTML = get[i].section;
+                document.getElementById("studInfo").style.display = 'block';
+                document.getElementById("violations").style.display = 'block';
                 break;  
             }
      
         }
 
         if(userFound == false){
-                alert("No user found");
-
+            alert("No student found!");
+			location.reload();
         }
-
+ }
+ function submitVio() {
     if(temp >= 0 ){
 
              if(document.getElementById("late").checked == true){
@@ -282,9 +289,7 @@ function getDetails(){
 
     // localStorage.Processed = JSON.stringify(log);
 
-    document.getElementById("idNumber").value = "";
-    document.getElementById("date").value = "";
-    
+    location.reload();
     temp = -1;
  }
 

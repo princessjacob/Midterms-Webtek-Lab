@@ -73,6 +73,14 @@ h2 {
     padding-top: 1em;
 }
 
+#violations {
+    display: none;
+}
+
+#studInfo {
+    display: none;
+}
+
 /* Button */
 
 .button {
@@ -238,6 +246,13 @@ label {
     td {
         font-size: 15px;
         padding-bottom: 0.5em;
+    }
+	.info {
+        font-size: 0.75em;
+        margin-left: 1em;
+    }
+    #studInfo {
+        margin-top: 1em;
     }
     .row {
         width: 95%;

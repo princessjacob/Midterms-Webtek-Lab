@@ -24,7 +24,7 @@
                 <div class = "col-12">
                     <h1>RECORD VIOLATION</h1>
                     <hr>
-                    <form>
+                    <form onsubmit="return false;">
                         
                         <label type="studId1" class="foDesign">Student ID:
                         </label>
@@ -32,10 +32,18 @@
                         
                         <label type="date" class="foDesign">Date and Time:</label> 
                         <input type="date" id ="date" placeholder="Date">
+						<button onclick="getDetails()" class="button1" id="enter"><span>Enter</span></button>
                     </form>
+					<div id="studInfo">
+                        <label>Name:</label>
+                        <p id="studName" class="info"></p>
+                        <br>
+                        <label>Section:</label>
+                        <p id="section" class="info"></p>
+                    </div>
                 </div>
             </div>
-            <div class="row">
+            <div id="violations" class="row">
                 <div class="col-12">
                     <h1>VIOLATIONS</h1>
                     <hr>
@@ -154,7 +162,7 @@
             <div class="row">
                     <div class="col-12">
 		    <a href="index.html">&#129152; Back</a>
-                    <button onclick="getDetails()"class="button1" id="submit"><span>Submit </span></button>
+                    <button onclick="submitVio()" class="button1" id="submit"><span>Submit </span></button>
                 </div>
             </div>
         </div>
