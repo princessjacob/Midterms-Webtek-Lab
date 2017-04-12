@@ -1,41 +1,52 @@
-
-
 <!DOCTYPE html>
-<html lang =en>
-    
+
+<html lang=en>
+
 <head>
- <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="A page that shows the options as to add the new form.">
-        <meta name="author" content="Webtek MI">
-        <title>VIEW VIOLATION</title>
-        <link rel="stylesheet" type="text/css" href="css/reset.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A page that shows the options as to add the new form.">
+    <meta name="author" content="Webtek MI">
+    <title>VIEW VIOLATION</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-    
+
 <body>
     <div class="container">
-            <div class="row-banner">
-                <img src="images/header.PNG" alt="Banner" class="responsive-img">
-            </div>
-    
-     <div class="row">
-                <div class = "col-12">
-                        <form>
-                            <label type="studId">Student ID:
-                            </label>
-                            <input type="text" id="studId" name="studId" placeholder="Enter Student ID">
-                        </form>
-                </div>
-    </div>
-    <div class="row">
-                    <div class="col-12">
-					<a href="index.html">&#129152; Back</a>
-                    <button class="button1" id="view"><span>Search </span></button>
-                </div>
-            </div>
-            </div>
-</body>
-</html>
+        <div class="row-banner">
+            <img src="images/header.PNG" alt="Banner" class="responsive-img">
+        </div>
 
+        <div class="row">
+            <div class="col-12">
+                <form>
+                    <label type="studId">Student ID:
+                    </label>
+                    <input type="text" id="studId" name="studId" placeholder="Enter Student ID">
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <a href="index.html">&#129152; Back</a>
+                <button class="button1" id="view" onclick="search()"><span>Search </span></button>
+                <table id="tbl">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>ID Number</th>
+                            <th>Name</th>
+                            <th>Violation</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tby">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
