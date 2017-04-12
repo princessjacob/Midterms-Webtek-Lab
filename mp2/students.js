@@ -51,7 +51,7 @@ function getDetails(){
 
              if(document.getElementById("late").checked == true){
                 var late= "late";
-                alert(container + "late");
+                alert("Successfully Recorded");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "late":late} ;
                 log.push(logObj);
 
@@ -60,7 +60,7 @@ function getDetails(){
                 document.getElementById("late").checked = "";      
              }
              if(document.getElementById("absent").checked == true){
-                alert(container + "absent");
+                alert("Successfully Recorded");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "absent":absent} ;
                 log.push(logObj);
 
@@ -69,7 +69,7 @@ function getDetails(){
              }
              if(document.getElementById("noId").checked == true){
                 var noId= "noID";
-                alert(container + "has no ID");
+                alert("Successfully Recorded");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "noId":noId} ;
                 log.push(logObj);
 
@@ -77,11 +77,22 @@ function getDetails(){
 
                 document.getElementById("noId").checked = "";   
              }
-             
-             if(document.getElementById("ImproperHairCut").checked == true){
+            if(document.getElementById("ImproperHairCut").checked == true){
                  var improperHair = "ImproperHairCut";
-                alert(container + "Improper Haircut");
+                alert("Successfully Recorded");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "improperHair":ImproperHairCut} ;
+                log.push(logObj);
+
+                localStorage.Processed = JSON.stringify(log);
+
+                document.getElementById("ImproperHairCut").checked = "";   
+                 
+             }
+             
+             if(document.getElementById("ImproShoes").checked == true){
+                 var improperShoes = "Improper Shoes";
+                alert("Successfully Recorded");
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "improperShoes":improperShoes} ;
                 log.push(logObj);
 
                 localStorage.Processed = JSON.stringify(log);
@@ -91,7 +102,7 @@ function getDetails(){
              }
             if(document.getElementById("Truancy").checked == true){
                 var Truancy = "Truancy";
-                alert(container + "Cut Class");
+                alert("Successfully Recorded");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Truancy":Truancy} ;
                 log.push(logObj);
 
@@ -101,7 +112,7 @@ function getDetails(){
              }
               if(document.getElementById("ImproUniform").checked == true){
                 var improperUniform = "improperUniform";
-                 alert(container + "Improper Uniform");
+                 alert"Successfully Recorded");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "improperUniform":improperUniform} ;
                 log.push(logObj);
 
@@ -111,7 +122,7 @@ function getDetails(){
              }
                 if(document.getElementById("bullying").checked == true){
                  var bullying = "Bullying";
-                alert("Recorded");
+                alert("Successfully Recorded");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Bullying":bullying} ;
                 log.push(logObj);
 
@@ -121,7 +132,7 @@ function getDetails(){
              }
                 if(document.getElementById("verbalAbuse").checked == true){
                  var vAbuse = "Verbal Abuse";
-                alert("Violation Recorded");
+                alert("Successfully Recorded");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "verbalAbuse":vAbuse} ;
                 log.push(logObj);
 
@@ -131,7 +142,7 @@ function getDetails(){
              }
                 if(document.getElementById("PDA").checked == true){
                  var PDA = "Public Display of Affection";
-                alert("Violation Recorded");
+                alert("Successfully Recorded");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Public Display of Affection":PDA} ;
                 log.push(logObj);
 
@@ -141,7 +152,7 @@ function getDetails(){
              }
                if(document.getElementById("Dishonesty").checked == true){
                  var dishonesty = "Dishonesty";
-                alert("Violation Recorded");
+                alert("Successfully Recorded");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Dishonesty":dishonesty} ;
                 log.push(logObj);
 
@@ -151,7 +162,7 @@ function getDetails(){
              }
                  if(document.getElementById("cheating").checked == true){
                  var cheating = "Cheating";
-                alert("Violation Recorded");
+                alert("Successfully Recorded");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Cheating":cheating} ;
                 log.push(logObj);
 
@@ -161,7 +172,7 @@ function getDetails(){
              }
                  if(document.getElementById("smoking").checked == true){
                  var smoke = "Smoking";
-                alert("Violation Recorded");
+                alert("Successfully Recorded");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Smoking":smoke} ;
                 log.push(logObj);
 
@@ -171,7 +182,7 @@ function getDetails(){
              }
                 if(document.getElementById("Intoxication").checked == true){
                 var intox = "Intoxication";
-                alert("Violation Recorded");
+                alert("Successfully Recorded");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Intoxication":intox} ;
                 log.push(logObj);
 
@@ -181,7 +192,7 @@ function getDetails(){
              }
                 if(document.getElementById("InappMaterial").checked == true){
                  var inaapMat = "Inappropriate Material";
-                alert("Violation Recorded");
+                alert("Successfully Recorded");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Innapropriate Material":inaapMat} ;
                 log.push(logObj);
 
@@ -191,7 +202,7 @@ function getDetails(){
              }
                 if(document.getElementById("Disrespect").checked == true){
                  var disRP = "Disrespect";
-                alert("Violation Recorded");
+                alert("Successfully Recorded");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Disrespect":disRP} ;
                 log.push(logObj);
 
@@ -202,7 +213,7 @@ function getDetails(){
 
              if(document.getElementById("gadget").checked == true){
                  var gadget = "Gadget";
-                alert(container + "Gadget");
+                alert("Successfully Recorded");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "gadget":gadget} ;
                 log.push(logObj);
 
@@ -213,7 +224,7 @@ function getDetails(){
 
              if(document.getElementById("Vandalism").checked == true){
                  var vandal = "Vandalism";
-                alert(container + vandal);
+                alert("Successfully Recorded");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Valdalism":vandal} ;
                 log.push(logObj);
 
@@ -223,7 +234,7 @@ function getDetails(){
              }
              if(document.getElementById("DmgSchl").checked == true){
                  var damage = "Damage to School Property";
-                alert(container + vandal);
+                alert("Successfully Recorded");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Damage to School Property":damage} ;
                 log.push(logObj);
 
@@ -233,8 +244,8 @@ function getDetails(){
              }
                 if(document.getElementById("Stealing").checked == true){
                  var steal = "Stealing";
-                alert(container + steal);
-                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Damage to School Property":damage} ;
+                alert("Successfully Recorded");
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Stealing":steal} ;
                 log.push(logObj);
 
                 localStorage.Processed = JSON.stringify(log);
@@ -243,7 +254,7 @@ function getDetails(){
              }
                 if(document.getElementById("Tampering").checked == true){
                  var tamper = "Tampering";
-                alert(container + tamper);
+                alert("Successfully Recorded");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Tampering":tamper} ;
                 log.push(logObj);
 
@@ -253,7 +264,7 @@ function getDetails(){
              }
                 if(document.getElementById("Littering").checked == true){
                  var litter = "Littering";
-                alert(container + litter);
+                alert("Successfully Recorded");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Littering":litter} ;
                 log.push(logObj);
 
