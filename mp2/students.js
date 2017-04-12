@@ -26,6 +26,7 @@ function getDetails(){
         }
     var name = "";
     var logObj;
+    var userFound = false;
      
     for(var i = 0; i <get.length; i++){
         var container;      
@@ -35,12 +36,16 @@ function getDetails(){
                 container =get[i].idnumber +" "+ get[i].name;
                 name = get[i].name;
                 temp = i;  
+                userFound=true;
                 break;  
-            } else {
-              alert("No user found!")
             }
      
-    }
+        }
+
+        if(userFound == false){
+                alert("No user found");
+
+        }
 
     if(temp >= 0 ){
 
