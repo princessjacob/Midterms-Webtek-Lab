@@ -112,7 +112,7 @@ function getDetails(){
              }
               if(document.getElementById("ImproUniform").checked == true){
                 var improperUniform = "improperUniform";
-                 alert"Successfully Recorded");
+                 alert("Successfully Recorded");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "improperUniform":improperUniform} ;
                 log.push(logObj);
 
@@ -143,7 +143,7 @@ function getDetails(){
                 if(document.getElementById("PDA").checked == true){
                  var PDA = "Public Display of Affection";
                 alert("Successfully Recorded");
-                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Public Display of Affection":PDA} ;
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "PublicDA":PDA} ;
                 log.push(logObj);
 
                 localStorage.Processed = JSON.stringify(log);
@@ -193,7 +193,7 @@ function getDetails(){
                 if(document.getElementById("InappMaterial").checked == true){
                  var inaapMat = "Inappropriate Material";
                 alert("Successfully Recorded");
-                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Innapropriate Material":inaapMat} ;
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Innapropriate":inaapMat} ;
                 log.push(logObj);
 
                 localStorage.Processed = JSON.stringify(log);
@@ -235,7 +235,7 @@ function getDetails(){
              if(document.getElementById("DmgSchl").checked == true){
                  var damage = "Damage to School Property";
                 alert("Successfully Recorded");
-                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Damage to School Property":damage} ;
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Damage":damage} ;
                 log.push(logObj);
 
                 localStorage.Processed = JSON.stringify(log);
