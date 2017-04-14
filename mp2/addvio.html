@@ -55,16 +55,55 @@
                                 <form action="">
 								<br>
                                     <tr>
-                                        <td><input id="ImproUniform" type="checkbox" name="violation" value="incompleteuniform">Incomplete Uniform</td>
+                                        <td><input id="ImproUniform" type="checkbox" name="violation" value="incompleteuniform" onclick="giveVerdict()">Incomplete Uniform</td>
                                     </tr>
-                                    <tr>
-                                        <td><input id="noId" type="checkbox" name="violation" value="noID">NO ID</td>
+                                    <tr id="ImproUniformR" class="reason">
+                                        <td>
+                                            Reason<br>
+                                            <textarea></textarea>
+                                            <br>
+                                            <input type="radio" name="group1" value="excuse"><label>Excuse</label>
+                                            <input type="radio" name="group1" value="unexcuse"><label>Unexcuse</label>
+                                        </td> 
                                     </tr>
+                                    
                                     <tr>
-                                        <td><input id="ImproperHairCut" type="checkbox" name="violation" value="haircut">Unconventional haircut</td>
+                                        <td><input id="noId" type="checkbox" name="violation" value="noID" onclick="giveVerdict()">NO ID</td>
                                     </tr>
+                                    <tr id="noIdR" class="reason">
+                                        <td>
+                                            Reason<br>
+                                            <textarea></textarea>
+                                            <br>
+                                            <input type="radio" name="group2" value="excuse"><label>Excuse</label>
+                                            <input type="radio" name="group2" value="unexcuse"><label>Unexcuse</label>
+                                        </td> 
+                                    </tr>
+                                    
                                     <tr>
-                                        <td><input id="ImproShoes" type="checkbox" name="violation" value="shoes">Improper Shoes </td>
+                                        <td><input id="ImproperHairCut" type="checkbox" name="violation" value="haircut" onclick="giveVerdict()">Unconventional haircut</td>
+                                    </tr>
+                                    <tr id="ImproperHairCutR" class="reason">
+                                        <td>
+                                            Reason<br>
+                                            <textarea></textarea>
+                                            <br>
+                                            <input type="radio" name="group3" value="excuse"><label>Excuse</label>
+                                            <input type="radio" name="group3" value="unexcuse"><label>Unexcuse</label>
+                                        </td> 
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td><input id="ImproShoes" type="checkbox" name="violation" value="shoes" onclick="giveVerdict()">Improper Shoes </td>
+                                    </tr>
+                                    <tr id="ImproShoesR" class="reason">
+                                        <td>
+                                            Reason<br>
+                                            <textarea></textarea>
+                                            <br>
+                                            <input type="radio" name="group4" value="excuse"><label>Excuse</label>
+                                            <input type="radio" name="group4" value="unexcuse"><label>Unexcuse</label>
+                                        </td> 
                                     </tr>
                             </form>
                             </table>
@@ -80,12 +119,32 @@
                                 <tr>
                                     <td><input id="Truancy" type="checkbox" name="violation" value="truancy">Truancy</td>
                                 </tr>
+                                    
                                 <tr>
-                                    <td><input id="late" type="checkbox" name="violation" value="tardiness">Tardiness</td>
+                                    <td><input id="late" type="checkbox" name="violation" value="tardiness" onclick="giveVerdict()">Tardiness</td>
                                 </tr>
+                                <tr id="lateR" class="reason">
+                                    <td>
+                                        Reason<br>
+                                        <textarea></textarea>
+                                        <br>
+                                        <input type="radio" name="group6" value="excuse"><label>Excuse</label>
+                                        <input type="radio" name="group6" value="unexcuse"><label>Unexcuse</label>
+                                    </td> 
+                                </tr>
+                                    
                                 <tr>
-                                    <td><input id="absent" type="checkbox" name="violation" value="abscence">Absence/s</td>
+                                    <td><input id="absent" type="checkbox" name="violation" value="abscence" onclick="giveVerdict()">Absence/s</td>
                                 </tr>
+                                <tr id="absentR" class="reason">
+                                    <td>
+                                        Reason<br>
+                                        <textarea></textarea>
+                                        <br>
+                                        <input type="radio" name="group7" value="excuse"><label>Excuse</label>
+                                        <input type="radio" name="group7" value="unexcuse"><label>Unexcuse</label>
+                                        </td> 
+                                    </tr>
                                 </form>
                             </table>  
                        </div>

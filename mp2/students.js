@@ -57,6 +57,7 @@ function getDetails(){
                 document.getElementById("section").innerHTML = get[i].section;
                 document.getElementById("studInfo").style.display = 'block';
                 document.getElementById("violations").style.display = 'block';
+                document.getElementById("submit").style.display = 'inline';
                 break;  
             }
      
@@ -73,7 +74,7 @@ function getDetails(){
              if(document.getElementById("late").checked == true){
                 var late= "late";
                 alert("Successfully Recorded");
-                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "late":late} ;
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "late":late, "reason":document.querySelector("#lateR textarea").value, "verdict":document.querySelector("#lateR input[type=radio]:checked").value} ;
                 log.push(logObj);
 
                 localStorage.Processed = JSON.stringify(log);
@@ -81,8 +82,9 @@ function getDetails(){
                 document.getElementById("late").checked = "";      
              }
              if(document.getElementById("absent").checked == true){
+                var absent = "absent";
                 alert("Successfully Recorded");
-                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "absent":absent} ;
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "absent":absent, "reason":document.querySelector("#absentR textarea").value, "verdict":document.querySelector("#absentR input[type=radio]:checked").value} ;
                 log.push(logObj);
 
                 localStorage.Processed = JSON.stringify(log);
@@ -91,7 +93,7 @@ function getDetails(){
              if(document.getElementById("noId").checked == true){
                 var noId= "noID";
                 alert("Successfully Recorded");
-                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "noId":noId} ;
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "noId":noId, "reason":document.querySelector("#noIdR textarea").value, "verdict":document.querySelector("#noIdR input[type=radio]:checked").value} ;
                 log.push(logObj);
 
                 localStorage.Processed = JSON.stringify(log);
@@ -101,7 +103,7 @@ function getDetails(){
             if(document.getElementById("ImproperHairCut").checked == true){
                  var improperHair = "ImproperHairCut";
                 alert("Successfully Recorded");
-                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "improperHair":ImproperHairCut} ;
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "improperHair":improperHair, "reason":document.querySelector("#ImproperHairCutR textarea").value, "verdict":document.querySelector("#ImproperHairCutR input[type=radio]:checked").value} ;
                 log.push(logObj);
 
                 localStorage.Processed = JSON.stringify(log);
@@ -113,7 +115,7 @@ function getDetails(){
              if(document.getElementById("ImproShoes").checked == true){
                  var improperShoes = "Improper Shoes";
                 alert("Successfully Recorded");
-                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "improperShoes":improperShoes} ;
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "improperShoes":improperShoes, "reason":document.querySelector("#ImproShoesR textarea").value, "verdict":document.querySelector("#ImproShoesR input[type=radio]:checked").value} ;
                 log.push(logObj);
 
                 localStorage.Processed = JSON.stringify(log);
@@ -134,7 +136,7 @@ function getDetails(){
               if(document.getElementById("ImproUniform").checked == true){
                 var improperUniform = "improperUniform";
                  alert("Successfully Recorded");
-                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "improperUniform":improperUniform} ;
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "improperUniform":improperUniform, "reason":document.querySelector("#ImproUniformR textarea").value, "verdict":document.querySelector("#ImproUniformR input[type=radio]:checked").value} ;
                 log.push(logObj);
 
                 localStorage.Processed = JSON.stringify(log);
@@ -311,7 +313,38 @@ function generateTable() {
 
 }
 
-
+function giveVerdict() {
+    if (document.getElementById("ImproUniform").checked) {
+        document.getElementById("ImproUniformR").style.display = 'block';
+    } else {
+        document.getElementById("ImproUniformR").style.display = 'none';
+    }
+    if (document.getElementById("noId").checked) {
+        document.getElementById("noIdR").style.display = 'block';
+    } else {
+        document.getElementById("noIdR").style.display = 'none';
+    }
+    if (document.getElementById("ImproperHairCut").checked) {
+        document.getElementById("ImproperHairCutR").style.display = 'block';
+    } else {
+        document.getElementById("ImproperHairCutR").style.display = 'none';
+    }
+    if (document.getElementById("ImproShoes").checked) {
+        document.getElementById("ImproShoesR").style.display = 'block';
+    } else {
+        document.getElementById("ImproShoesR").style.display = 'none';
+    }
+    if (document.getElementById("late").checked) {
+        document.getElementById("lateR").style.display = 'block';
+    } else {
+        document.getElementById("lateR").style.display = 'none';
+    }
+    if (document.getElementById("absent").checked) {
+        document.getElementById("absentR").style.display = 'block';
+    } else {
+        document.getElementById("absentR").style.display = 'none';
+    }
+}
 
 
 

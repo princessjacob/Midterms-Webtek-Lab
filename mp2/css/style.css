@@ -73,6 +73,10 @@ h2 {
     padding-top: 1em;
 }
 
+.reason {
+    display: none;
+}
+
 #violations {
     display: none;
 }
@@ -138,6 +142,10 @@ h2 {
     color: white;
 }
 
+#submit {
+    display: none;
+}
+
 a {
     color: black;
     text-decoration: none;
@@ -200,6 +208,11 @@ label {
     font-size: 1.5em; 
 }
 
+textarea {
+    height: 10em;
+    width: 25em;
+}
+
 /* Checkbox */
 .collapse{
   cursor: pointer;
@@ -243,9 +256,19 @@ label {
     label {
         font-size: 1em;
     }
+    input[type=radio] {
+        font-size: 0.5em;
+    }
     td {
         font-size: 15px;
         padding-bottom: 0.5em;
+    }
+    textarea {
+        width: 15em;
+        height: 15em;
+    }
+    .reason td {
+        padding-left: 3.4em;
     }
 	.info {
         font-size: 0.75em;
@@ -285,6 +308,10 @@ label {
     td {
         font-size: 15px;
         padding-bottom: 0.5em;
+    }
+    textarea {
+        width: 15em;
+        height: 10em;
     }
     .row {
         width: 90%;
