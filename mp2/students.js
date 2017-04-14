@@ -428,7 +428,7 @@ function searchCount() {
 
         }
 
-        if (lateCtr > 4){
+      if (lateCtr > 4){
                         alert("The student has " + lateCtr + " late records.")
         } else if (absentCtr > 4){
                         alert("The student has " + absentCtr + " absent records.")
@@ -438,37 +438,37 @@ function searchCount() {
                         alert("The student has " + improperHairCtr + " improper haircut records.")
         } else if (improperShoesCtr > 4){
                         alert("The student has " + improperShoesCtr + " improper shoes records.")
-        } else if (truancyCtr > 4){
+        } else if (truancyCtr > 1){
                         alert("The student has " + truancyCtr + " truancy records.")
         } else if (improperUniformCtr > 4){
                         alert("The student has " + improperUniformCtr + " improper uniform records.")
-        } else if (bullyingCtr > 4){
+        } else if (bullyingCtr > 1){
                         alert("The student has " + bullyingCtr + " bullying records.")
-        } else if (verbalAbuseCtr > 4){
+        } else if (verbalAbuseCtr > 1){
                         alert("The student has " + verbalAbuseCtr + " verbal abuse records.")
-        } else if (publicDACtr > 4){
+        } else if (publicDACtr > 1){
                         alert("The student has " + publicDACtr + " PDA records.")
-        } else if (dishonestyCtr > 4){
+        } else if (dishonestyCtr > 1){
                         alert("The student has " + dishonestyCtr + " dishonesty records.")
-        } else if (cheatingCtr > 4){
+        } else if (cheatingCtr > 1){
                         alert("The student has " + cheatingCtr + " cheating records.")
-        } else if (smokingCtr > 4){
+        } else if (smokingCtr > 1){
                         alert("The student has " + smokingCtr + " smoking records.")
-        } else if (intoxicationCtr > 4){
+        } else if (intoxicationCtr > 1){
                         alert("The student has " + intoxicationCtr + " intoxication records.")
         } else if (innapropriateCtr > 4){
                         alert("The student has " + innapropriateCtr + " bringing innapropriate material records.")
-        } else if (disrespectCtr > 4){
+        } else if (disrespectCtr > 1){
                         alert("The student has " + disrespectCtr + " desirespecting records.")
         } else if (gadgetCtr > 4){
                         alert("The student has " + gadgetCtr + " bringing of gadget records.")
-        } else if (vandalismCtr > 4){
+        } else if (vandalismCtr > 1){
                         alert("The student has " + vandalismCtr + " vandalism records.")
-        } else if (damageCtr > 4){
+        } else if (damageCtr > 1){
                         alert("The student has " + damageCtr + " damages to school prperty records.")
-        } else if (stealingCtr > 4){
+        } else if (stealingCtr > 1){
                         alert("The student has " + stealingCtr + " stealing records.")
-        } else if (tamperingCtr > 4){
+        } else if (tamperingCtr > 1){
                         alert("The student has " + tamperingCtr + " tampering records.")
         } else if (litteringCtr > 4){
                         alert("The student has " + litteringCtr + " littering records.")
@@ -477,6 +477,7 @@ function searchCount() {
 
 
     }
+
 
 
 }
