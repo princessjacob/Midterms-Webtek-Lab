@@ -421,7 +421,7 @@ function searchCount() {
             } else if (logger[i].Bullying && vioAdded.includes("improperUniform")) {
                 bullyingCtr++;
             } else if (logger[i].verbalAbuse && vioAdded.includes("improperUniform")) {
-                verbalAbuseCtr();
+                verbalAbuseCtr++;
             } else if (logger[i].PublicDA && vioAdded.includes("PublicDA")) {
                 publicDACtr++;
             } else if (logger[i].Dishonesty && vioAdded.includes("Dishonesty")) {
