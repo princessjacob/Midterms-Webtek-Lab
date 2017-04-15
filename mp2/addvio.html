@@ -23,7 +23,7 @@
             <div class="row">
                 <div class = "col-12">
                     <h1>RECORD VIOLATION</h1>
-                    <hr>
+                    
                     <form onsubmit="return false;">
                         
                         <label type="studId1" class="foDesign">Student ID:
@@ -32,8 +32,9 @@
                         
                         <label type="date" class="foDesign">Date:</label> 
                         <input type="date" id ="date" placeholder="Date">
-						<button onclick="getDetails()" class="button1" id="enter"><span>Enter</span></button>
+						
                     </form>
+			<button onclick="getDetails()" class="button1" id="enter"><span>Enter</span></button>
 					<div id="studInfo">
                         <label>Name:</label>
                         <p id="studName" class="info"></p>
@@ -46,7 +47,7 @@
             <div id="violations" class="row">
                 <div class="col-12">
                     <h1>VIOLATIONS</h1>
-                    <hr>
+                    
                     <div id = "checkbox">   
                         <label class="collapse" for="_1">SCHOOL WEAR AND HAIRCUT &#9660;<i class="fa fa-sort-desc" aria-hidden="true"></i></label>
                         <input id="_1" type="checkbox"> 
@@ -220,8 +221,13 @@
             
             <div class="row">
                     <div class="col-12">
-		    <a href="index.html">&#129152; Back</a>
+		    <form action = "index.html">
+                        <button class="button2" id="back"><span>&#129152; Back</span></button>
+		          <form>
                     <button onclick="submitVio(); searchCount();" class="button1" id="submit"><span>Submit </span></button>
+                        
+                    </form>
+                      </form>
                 </div>
             </div>
         </div>
