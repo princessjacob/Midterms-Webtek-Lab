@@ -229,7 +229,7 @@ function getDetails(){
                 document.getElementById("Intoxication").checked = "";
                 vioAdded.push("Intoxication"); 
              }
-                if(document.getElementById("InappMaterial").checked == true){
+              if(document.getElementById("InappMaterial").checked == true){
                  var inaapMat = "Inappropriate";
                 alert("Successfully Recorded");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Innapropriate":inaapMat} ;
@@ -237,7 +237,7 @@ function getDetails(){
 
                 localStorage.Processed = JSON.stringify(log);
 
-                document.getElementById("InnapMaterial").checked = "";
+                document.getElementById("InappMaterial").checked = "";
                 vioAdded.push("Innapropriate"); 
              }
                 if(document.getElementById("Disrespect").checked == true){
