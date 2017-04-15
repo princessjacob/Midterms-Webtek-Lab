@@ -1,6 +1,6 @@
 /* General Font Style */
 html {
-   background: #5DADE2;
+   background: #336699;
     background-size: 100% 100%;  
 }
 @font-face {
@@ -15,6 +15,7 @@ h1 {
     font-size: 2.5em;
     font-family: 'Fredoka One', cursive;
     text-align: center;
+    border-bottom: 1px solid black;
 }
 
 h2 {
@@ -89,7 +90,7 @@ h2 {
 
 .button {
   border-radius: 4px;
-  background-color: #5DADE2;
+  background-color: #336699
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -101,29 +102,9 @@ h2 {
   margin: 5px;
 }
 
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -50px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 50px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
+.button:hover {
+    background-color: grey;
+    color: white;
 }
 
 .button1 {
@@ -139,6 +120,24 @@ h2 {
 
 .button1:hover {
     background-color: #008CBA;
+    color: white;
+}
+
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #555555;
+    border-radius: 4px;
+    padding: 12px 20px 12px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+     margin-right: 16px;
+    display: inline-block;
+}
+
+.button2:hover {
+    background-color: #555555;
     color: white;
 }
 
@@ -167,14 +166,74 @@ a:visited
     margin: auto;
     width: 30%;
     padding: 10px;
+    text-align: center;
+}
+
+#searchBy {
+    background-color: #336699;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    border: 2px solid #555555;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#enter {
+    margin-top: 20px;
+}
+
+#view {
+     margin-top: 20px;
+}
+
+#back {
+     margin-top: 20px;
+}
+
+#submit {
+     margin-top: 20px;
+}
+table#tbl {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    text-align: left;
+    border: solid 1px whitesmoke;
+    padding: 1px;
+}
+
+th {
+    border: solid 1px whitesmoke;
+    text-align: left;
+    background-color: #336699;
+    color: white;
+    font-size: 16px;
+    padding: 1px;
 }
 
 
 /* Form */
 
+input[type=radio] {
+    background-color: aquamarine;
+    width: 18px; 
+    height: 18px;
+    font-size: 50px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
 input[type=checkbox] {
-    width: 30px; 
-    height: 30px;
+    width: 25px; 
+    height: 25px;
     font-size: 80px;
     margin: 10px;
     padding: 10px;
@@ -191,6 +250,7 @@ input[type=text] {
     background-color: white;
     background-repeat: no-repeat;
     padding: 12px 20px 12px;
+    margin-top: 20px;
 }
 
 input[type=date] {
@@ -211,6 +271,8 @@ label {
 textarea {
     height: 10em;
     width: 25em;
+    border: 2px solid #008CBA;
+    border-radius: 4px;
 }
 
 /* Checkbox */
