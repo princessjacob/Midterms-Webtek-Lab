@@ -184,12 +184,12 @@ function search() {
 }
 
 
-function sendToServer(){
+function syncServer(){
     if(localStorage.Processed){
         var xmlhttp = new XMLHttpRequest();
-        xmlhttp.open("POST", "sendserver.json");
+        xmlhttp.open("POST", "log.json");
        xmlhttp.setRequestHeader("Content-Type", "application/json");
         xmlhttp.send(localStorage.Processed);
-        console.log("Approved data has been sent to the server");
+        console.log("Log has been pushed to the server");
     }
 }
