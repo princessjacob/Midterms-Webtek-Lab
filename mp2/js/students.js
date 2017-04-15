@@ -19,6 +19,8 @@ today = year + "-" + month + "-" + day;
 
 document.getElementById('date').value = today;
 
+var vioAdded = [];
+
 function getDetails(){ 
         var req = new XMLHttpRequest();
         var url = "http://localhost/mp2/sample.txt"
@@ -79,7 +81,8 @@ function getDetails(){
 
                 localStorage.Processed = JSON.stringify(log);
 
-                document.getElementById("late").checked = "";      
+                document.getElementById("late").checked = "";    
+                vioAdded.push("late");  
              }
              if(document.getElementById("absent").checked == true){
                 var absent = "absent";
@@ -88,7 +91,8 @@ function getDetails(){
                 log.push(logObj);
 
                 localStorage.Processed = JSON.stringify(log);
-                document.getElementById("absent").checked = "";   
+                document.getElementById("absent").checked = "";  
+                vioAdded.push("absent");  
              }
              if(document.getElementById("noId").checked == true){
                 var noId= "noID";
@@ -98,7 +102,8 @@ function getDetails(){
 
                 localStorage.Processed = JSON.stringify(log);
 
-                document.getElementById("noId").checked = "";   
+                document.getElementById("noId").checked = "";  
+                vioAdded.push("noId");  
              }
             if(document.getElementById("ImproperHairCut").checked == true){
                  var improperHair = "ImproperHairCut";
@@ -109,6 +114,7 @@ function getDetails(){
                 localStorage.Processed = JSON.stringify(log);
 
                 document.getElementById("ImproperHairCut").checked = "";   
+                vioAdded.push("improperHair"); 
                  
              }
              
@@ -120,7 +126,8 @@ function getDetails(){
 
                 localStorage.Processed = JSON.stringify(log);
 
-                document.getElementById("ImproperHairCut").checked = "";   
+                document.getElementById("ImproperHairCut").checked = "";  
+                vioAdded.push("improperShoes");  
                  
              }
             if(document.getElementById("Truancy").checked == true){
@@ -131,7 +138,8 @@ function getDetails(){
 
                 localStorage.Processed = JSON.stringify(log);
 
-                document.getElementById("Truancy").checked = "";   
+                document.getElementById("Truancy").checked = ""; 
+                vioAdded.push("Truancy");   
              }
               if(document.getElementById("ImproUniform").checked == true){
                 var improperUniform = "improperUniform";
@@ -142,6 +150,7 @@ function getDetails(){
                 localStorage.Processed = JSON.stringify(log);
 
                 document.getElementById("ImproUniform").checked = "";
+                vioAdded.push("improperUniform"); 
              }
                 if(document.getElementById("bullying").checked == true){
                  var bullying = "Bullying";
@@ -152,6 +161,7 @@ function getDetails(){
                 localStorage.Processed = JSON.stringify(log);
 
                 document.getElementById("bullying").checked = "";
+                vioAdded.push("Bullying"); 
              }
                 if(document.getElementById("verbalAbuse").checked == true){
                  var vAbuse = "Verbal Abuse";
@@ -162,6 +172,7 @@ function getDetails(){
                 localStorage.Processed = JSON.stringify(log);
 
                 document.getElementById("verbalAbuse").checked = "";
+                vioAdded.push("verbalAbuse"); 
              }
                 if(document.getElementById("PDA").checked == true){
                  var PDA = "Public Display of Affection";
@@ -172,6 +183,7 @@ function getDetails(){
                 localStorage.Processed = JSON.stringify(log);
 
                 document.getElementById("PDA").checked = "";
+                vioAdded.push("PublicDA"); 
              }
                if(document.getElementById("Dishonesty").checked == true){
                  var dishonesty = "Dishonesty";
@@ -182,6 +194,7 @@ function getDetails(){
                 localStorage.Processed = JSON.stringify(log);
 
                 document.getElementById("Dishonesty").checked = "";
+                vioAdded.push("Dishonesty"); 
              }
                  if(document.getElementById("cheating").checked == true){
                  var cheating = "Cheating";
@@ -192,6 +205,7 @@ function getDetails(){
                 localStorage.Processed = JSON.stringify(log);
 
                 document.getElementById("cheating").checked = "";
+                vioAdded.push("Cheating"); 
              }
                  if(document.getElementById("smoking").checked == true){
                  var smoke = "Smoking";
@@ -202,6 +216,7 @@ function getDetails(){
                 localStorage.Processed = JSON.stringify(log);
 
                 document.getElementById("smoking").checked = "";
+                vioAdded.push("Smoking"); 
              }
                 if(document.getElementById("Intoxication").checked == true){
                 var intox = "Intoxication";
@@ -212,9 +227,10 @@ function getDetails(){
                 localStorage.Processed = JSON.stringify(log);
 
                 document.getElementById("Intoxication").checked = "";
+                vioAdded.push("Intoxication"); 
              }
                 if(document.getElementById("InappMaterial").checked == true){
-                 var inaapMat = "Inappropriate Material";
+                 var inaapMat = "Inappropriate";
                 alert("Successfully Recorded");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Innapropriate":inaapMat} ;
                 log.push(logObj);
@@ -222,6 +238,7 @@ function getDetails(){
                 localStorage.Processed = JSON.stringify(log);
 
                 document.getElementById("InnapMaterial").checked = "";
+                vioAdded.push("Innapropriate"); 
              }
                 if(document.getElementById("Disrespect").checked == true){
                  var disRP = "Disrespect";
@@ -232,6 +249,7 @@ function getDetails(){
                 localStorage.Processed = JSON.stringify(log);
 
                 document.getElementById("cheating").checked = "";
+                vioAdded.push("Cheating"); 
              }
 
              if(document.getElementById("gadget").checked == true){
@@ -243,6 +261,7 @@ function getDetails(){
                 localStorage.Processed = JSON.stringify(log);
 
                 document.getElementById("gadget").checked = "";
+                vioAdded.push("gadget"); 
              }
 
              if(document.getElementById("Vandalism").checked == true){
@@ -254,6 +273,7 @@ function getDetails(){
                 localStorage.Processed = JSON.stringify(log);
 
                 document.getElementById("Vandalism").checked = "";
+                vioAdded.push("Vandalism"); 
              }
              if(document.getElementById("DmgSchl").checked == true){
                  var damage = "Damage to School Property";
@@ -264,6 +284,7 @@ function getDetails(){
                 localStorage.Processed = JSON.stringify(log);
 
                 document.getElementById("DmgSchl").checked = "";
+                vioAdded.push("Damage"); 
              }
                 if(document.getElementById("Stealing").checked == true){
                  var steal = "Stealing";
@@ -274,6 +295,7 @@ function getDetails(){
                 localStorage.Processed = JSON.stringify(log);
 
                 document.getElementById("Stealing").checked = "";
+                vioAdded.push("Stealing"); 
              }
                 if(document.getElementById("Tampering").checked == true){
                  var tamper = "Tampering";
@@ -284,6 +306,7 @@ function getDetails(){
                 localStorage.Processed = JSON.stringify(log);
 
                 document.getElementById("Tampering").checked = "";
+                vioAdded.push("Tampering"); 
              }
                 if(document.getElementById("Littering").checked == true){
                  var litter = "Littering";
@@ -294,6 +317,7 @@ function getDetails(){
                 localStorage.Processed = JSON.stringify(log);
 
                 document.getElementById("Littering").checked = "";
+                vioAdded.push("Littering"); 
              }
           
       }
@@ -380,49 +404,49 @@ function searchCount() {
 
     for (var i = 0; i < logger.length; i++){
         if (document.getElementById("idNumber").value == logger[i].idnum){
-            if(logger[i].late){
+             if(logger[i].late && logger[i].verdict == "unexcuse"&& logger[i].reason != "" && vioAdded.includes("late")){
                 lateCtr++;        
-            } else if (logger[i].absent){
+            } else if (logger[i].absent && logger[i].verdict == "unexcuse"&& logger[i].reason != "" && vioAdded.includes("absent")){
                 absentCtr++;
-            } else if (logger[i].noId){
+            } else if (logger[i].noId && logger[i].verdict == "unexcuse"&& logger[i].reason != "" && vioAdded.includes("noId")){
                 noIdCtr++;
-            } else if (logger[i].improperHair){
+            } else if (logger[i].improperHair && logger[i].verdict == "unexcuse"&& logger[i].reason != "" && vioAdded.includes("improperHair")){
                 improperHairCtr++;
-            } else if (logger[i].improperShoes) {
+            } else if (logger[i].improperShoes && logger[i].verdict == "unexcuse"&& logger[i].reason != "" && vioAdded.includes("improperShoes")) {
                 improperShoesCtr++;
-            } else if (logger[i].Truancy) {
+            } else if (logger[i].Truancy && vioAdded.includes("Truancy")) {
                 truancyCtr++;
-            } else if (logger[i].improperUniform) {
+            } else if (logger[i].improperUniform && logger[i].verdict == "unexcuse"&& logger[i].reason != "" && vioAdded.includes("improperUniform")) {
                 improperUniformCtr++;
-            } else if (logger[i].Bullying) {
+            } else if (logger[i].Bullying && vioAdded.includes("improperUniform")) {
                 bullyingCtr++;
-            } else if (logger[i].verbalAbuse) {
+            } else if (logger[i].verbalAbuse && vioAdded.includes("improperUniform")) {
                 verbalAbuseCtr();
-            } else if (logger[i].PublicDA) {
+            } else if (logger[i].PublicDA && vioAdded.includes("PublicDA")) {
                 publicDACtr++;
-            } else if (logger[i].Dishonesty) {
+            } else if (logger[i].Dishonesty && vioAdded.includes("Dishonesty")) {
                 dishonestyCtr++;
-            } else if (logger[i].Cheating) {
+            } else if (logger[i].Cheating && vioAdded.includes("Cheating")) {
                 cheatingCtr++;
-            } else if (logger[i].Smoking) {
+            } else if (logger[i].Smoking && vioAdded.includes("Smoking")) {
                 smokingCtr++;
-            } else if (logger[i].Intoxication) {
+            } else if (logger[i].Intoxication && vioAdded.includes("Intoxication")) {
                 intoxicationCtr++;
-            } else if (logger[i].Innapropriate) {
+            } else if (logger[i].Innapropriate && vioAdded.includes("Innapropriate")) {
                 innapropriateCtr++;
-            } else if (logger[i].Disrespect) {
+            } else if (logger[i].Disrespect && vioAdded.includes("Disrespect")) {
                 disrespectCtr++;
-            } else if (logger[i].gadget) {
+            } else if (logger[i].gadget && vioAdded.includes("gadget")) {
                 gadgetCtr++;
-            } else if (logger[i].Vandalism) {
+            } else if (logger[i].Vandalism && vioAdded.includes("Vandalism")) {
                 vandalismCtr++;
-            } else if (logger[i].Damage) {
+            } else if (logger[i].Damage && vioAdded.includes("Damage")) {
                 damageCtr++;
-            } else if (logger[i].Stealing) {
+            } else if (logger[i].Stealing && vioAdded.includes("Stealing")) {
                 stealingCtr++;
-            } else if (logger[i].Tampering) {
+            } else if (logger[i].Tampering && vioAdded.includes("Tampering")) {
                 tamperingCtr++;
-            } else if (logger[i].Littering) {
+            } else if (logger[i].Littering && vioAdded.includes("Littering")) {
                 litteringCtr++;
             }
 
@@ -498,7 +522,7 @@ function searchCount() {
 
         if (vandalismCtr >= 1){
                         alert("The student has " + vandalismCtr + " vandalism records.")
-        }
+            }
 
         if (damageCtr >= 1){
                         alert("The student has " + damageCtr + " damages to school prperty records.")
