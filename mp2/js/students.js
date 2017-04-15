@@ -267,7 +267,7 @@ function getDetails(){
              if(document.getElementById("Vandalism").checked == true){
                  var vandal = "Vandalism";
                 alert("Successfully Recorded");
-                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Valdalism":vandal} ;
+                logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Vandalism":vandal} ;
                 log.push(logObj);
 
                 localStorage.Processed = JSON.stringify(log);
