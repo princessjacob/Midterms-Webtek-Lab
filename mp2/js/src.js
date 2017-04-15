@@ -7,7 +7,7 @@ function search() {
     var option = document.getElementById("searchBy").options;
     var input = document.getElementById("studId").value;
 
-    for (var i = 0; i < logger.length; i++) {
+        for (var i = 0; i < logger.length; i++) {
       if (option[0].selected) {  
         if (logger[i].idnum.indexOf(input) > -1) {
             trow = document.createElement("tr");
@@ -25,10 +25,10 @@ function search() {
                 cell4.innerHTML = logger[i].absent;
             } else if (logger[i].noId) {
                 cell4.innerHTML = logger[i].noId;
-            } else if (logger[i].imporperHair) {
-                cell4.innerHTML = logger[i].imporperHair;
-            } else if (logger[i].imporperShoes) {
-                cell4.innerHTML = logger[i].imporperShoes;
+            } else if (logger[i].improperHair) {
+                cell4.innerHTML = logger[i].improperHair;
+            } else if (logger[i].improperShoes) {
+                cell4.innerHTML = logger[i].improperShoes;
             } else if (logger[i].Truancy) {
                 cell4.innerHTML = logger[i].Truancy;
             } else if (logger[i].improperUniform) {
@@ -82,10 +82,10 @@ function search() {
                 cell4.innerHTML = logger[i].absent;
             } else if (logger[i].noId) {
                 cell4.innerHTML = logger[i].noId;
-            } else if (logger[i].imporperHair) {
-                cell4.innerHTML = logger[i].improperHair;
-            } else if (logger[i].imporperShoes) {
-                cell4.innerHTML = logger[i].imporperShoes;
+            } else if (logger[i].improperHair) {
+                cell4.innerHTML =  logger[i].improperHair;
+            } else if (logger[i].improperShoes) {
+                cell4.innerHTML = logger[i].improperShoes;
             } else if (logger[i].Truancy) {
                 cell4.innerHTML = logger[i].Truancy;
             } else if (logger[i].improperUniform) {
@@ -139,10 +139,10 @@ function search() {
                 cell4.innerHTML = logger[i].absent;
             } else if (logger[i].noId) {
                 cell4.innerHTML = logger[i].noId;
-            } else if (logger[i].imporperHair) {
+            } else if (logger[i].improperHair) {
                 cell4.innerHTML = logger[i].improperHair;
-            } else if (logger[i].imporperShoes) {
-                cell4.innerHTML = logger[i].imporperShoes;
+            } else if (logger[i].improperShoes) {
+                cell4.innerHTML = logger[i].improperShoes;
             } else if (logger[i].Truancy) {
                 cell4.innerHTML = logger[i].Truancy;
             } else if (logger[i].improperUniform) {
