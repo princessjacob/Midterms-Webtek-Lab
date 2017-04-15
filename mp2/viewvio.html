@@ -23,15 +23,21 @@
         <div class="row">
             <div class="col-12">
                 <form>
-                    <label type="studId">Student ID:
+                    <label type="studId">Search by:
                     </label>
-                    <input type="text" id="studId" name="studId" placeholder="Enter Student ID" onkeyup="search()">
-                </form>
-                <select id="searchBy">
+                     <select id="searchBy">
                     <option value="ID Number">ID Number</option>
                     <option value="Name">Name</option>
                     <option value="Date">Date</option>
                 </select>
+                </form>
+               <form>
+                 
+                    <label type="studId">
+                    </label>
+                    <input type="text" id="studId" name="studId" placeholder="Input search.." onkeyup="search()">
+                   
+                </form>
             </div>
         </div>
         <div class="row">
@@ -52,8 +58,12 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <a href="index.html">&#129152; Back</a>
-                 <button onclick="syncServer()" class="button1" id="view"><span>Send to Server </span></button>
+                <form action = "index.html">
+                        <button class="button2" id="back"><span>&#129152; Back</span></button>
+                      <form>
+                <button onclick="syncServer()" class="button1" id="view"><span>Send to Server </span></button>
+                    </form>
+                    </form>
             </div>
         </div>
     </div>
