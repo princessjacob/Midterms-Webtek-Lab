@@ -30,17 +30,17 @@
                         /* hour is before noon */
                         if ( myDate.getHours() < 12 ) 
                         {
-                            document.write("<p>" + gm.fontcolor("#4C4F4F").fontsize(12).bold() + "</p>");
+                            document.write("<p>" + gm.fontcolor("#4C4F4F").fontsize(6).bold() + "</p>");
                         }
                         else  /* Hour is from noon to 5pm (actually to 5:59 pm) */
                         if ( myDate.getHours() >= 12 && myDate.getHours() <= 17 )
                         {
-                            document.write("<p>" + ga.fontcolor("#4C4F4F").fontsize(12).bold() + "</p>");
+                            document.write("<p>" + ga.fontcolor("#4C4F4F").fontsize(6).bold() + "</p>");
                         }
                         else  /* the hour is after 5pm, so it is between 6pm and midnight */
                         if ( myDate.getHours() > 17 && myDate.getHours() <= 24 )
                         {
-                            document.write("<p>" + ge.fontcolor("#4C4F4F").fontsize(12).bold() + "</p>");
+                            document.write("<p>" + ge.fontcolor("#4C4F4F").fontsize(6).bold() + "</p>");
                         }
                         else  /* the hour is not between 0 and 24, so something is wrong */
                         {
