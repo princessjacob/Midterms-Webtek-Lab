@@ -1,0 +1,11 @@
+CACHE MANIFEST
+CACHE:
+index.html
+addvio.html
+viewvio.html
+css/reset.css
+css/style.css
+js/src.js
+js/students.js
+NETWORK:
+*
