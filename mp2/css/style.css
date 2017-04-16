@@ -205,17 +205,15 @@ table#tbl {
 
 td {
     text-align: left;
-    border: solid 1px whitesmoke;
-    padding: 1px;
+    padding: 2px;
 }
 
 th {
-    border: solid 1px whitesmoke;
     text-align: left;
     background-color: #336699;
     color: white;
     font-size: 16px;
-    padding: 1px;
+    padding: 2px;
 }
 
 
