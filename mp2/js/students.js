@@ -74,7 +74,7 @@ function getDetails(){
     if(temp >= 0 ){
 
              if(document.getElementById("late").checked == true){
-                var late= "late";
+                var late= "Late";
                 alert("Successfully Recorded");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "late":late, "reason":document.querySelector("#lateR textarea").value, "verdict":document.querySelector("#lateR input[type=radio]:checked").value} ;
                 log.push(logObj);
@@ -85,7 +85,7 @@ function getDetails(){
                 vioAdded.push("late");  
              }
              if(document.getElementById("absent").checked == true){
-                var absent = "absent";
+                var absent = "Absent";
                 alert("Successfully Recorded");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "absent":absent, "reason":document.querySelector("#absentR textarea").value, "verdict":document.querySelector("#absentR input[type=radio]:checked").value} ;
                 log.push(logObj);
@@ -95,7 +95,7 @@ function getDetails(){
                 vioAdded.push("absent");  
              }
              if(document.getElementById("noId").checked == true){
-                var noId= "noID";
+                var noId= "No ID";
                 alert("Successfully Recorded");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "noId":noId, "reason":document.querySelector("#noIdR textarea").value, "verdict":document.querySelector("#noIdR input[type=radio]:checked").value} ;
                 log.push(logObj);
@@ -106,7 +106,7 @@ function getDetails(){
                 vioAdded.push("noId");  
              }
             if(document.getElementById("ImproperHairCut").checked == true){
-                 var improperHair = "ImproperHairCut";
+                 var improperHair = "Improper Hair Cut";
                 alert("Successfully Recorded");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "improperHair":improperHair, "reason":document.querySelector("#ImproperHairCutR textarea").value, "verdict":document.querySelector("#ImproperHairCutR input[type=radio]:checked").value} ;
                 log.push(logObj);
@@ -142,7 +142,7 @@ function getDetails(){
                 vioAdded.push("Truancy");   
              }
               if(document.getElementById("ImproUniform").checked == true){
-                var improperUniform = "improperUniform";
+                var improperUniform = "Improper Uniform";
                  alert("Successfully Recorded");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "improperUniform":improperUniform, "reason":document.querySelector("#ImproUniformR textarea").value, "verdict":document.querySelector("#ImproUniformR input[type=radio]:checked").value} ;
                 log.push(logObj);
@@ -230,7 +230,7 @@ function getDetails(){
                 vioAdded.push("Intoxication"); 
              }
               if(document.getElementById("InappMaterial").checked == true){
-                 var inaapMat = "Inappropriate";
+                 var inaapMat = "Inappropriate Materials";
                 alert("Successfully Recorded");
                 logObj = {"date":document.getElementById("date").value, "idnum":document.getElementById("idNumber").value, "name":name, "Innapropriate":inaapMat} ;
                 log.push(logObj);
